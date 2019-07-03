@@ -1,33 +1,33 @@
-# Pre Instalação
+## Pre Instalação
 <br>
 
-## Layout do Teclado
+### Layout do Teclado
  
-### Modificar o layout
+#### Modificar o layout
 
     # loadkeys br-abnt2
     ou
     # localectl set-keymap br-abnt2
 <br>
 
-## Atualizar o Relógio do Sistema
+### Atualizar o Relógio do Sistema
 
     # timedatectl set-ntp true
 <br>
 
-## Partição dos Discos
+### Partição dos Discos
 
-### Listar discos
+#### Listar discos
 
     # fdisk -l
 <br>
 
-### Criar partições
+#### Criar partições
 
     # cfdisk
 <br>
 
-### Formatar as partições
+#### Formatar as partições
 
     # mkfs.ext4 /dev/sdX1
     
@@ -35,7 +35,7 @@
     # swapon /dev/sdX2
 <br>
 
-### Montar os sistemas de arquivos
+#### Montar os sistemas de arquivos
 
     # mount /dev/sdX1 /mnt
 
@@ -43,14 +43,14 @@
 
 ## Instalação
 
-**Mirrors**
+#### Mirrors
 
     > /etc/pacman.d/mirrorlist
     # sed "s/^Ser/#Ser/" /etc/pacman.d/mirrorlist > /tmp/mirrors
     # sed '/Brazil/{n;s/^#//}' /tmp/mirrors > /etc/pacman.d/mirrorlist
 <br>
 
-**Instalar os pacotes base**
+#### Instalar os pacotes base
 
     # pacstrap /mnt base base-devel
 
@@ -58,23 +58,23 @@
 
 ## Configuração do Sistema
 
-**Fstab**
+#### Fstab
 
     # genfstab -p /mnt >> /mnt/etc/fstab
 <br>
 
-**Chroot**
+#### Chroot
 
     # arch-chroot /mnt
 <br>
 
-**Fuso horário**
+#### Fuso horário
 
     # ln -sf /usr/share/zoneinfo/America/Sao_Paulo /etc/localtime
     # hwclock --systohc
 <br>
 
-**Localização**
+#### Localização
 
     # nano /etc/locale.gen
     > en_US.UTF-8 UTF-8
@@ -82,18 +82,18 @@
     # locale-gen
 <br>
   
-**Linguagem**
+#### Linguagem
 
     # echo LANG=en_US.UTF-8 > /etc/locale.conf
     # export LANG=en_US.UTF-8 
 <br>
 
-**Layout do teclado**
+#### Layout do teclado
 
     # echo KEYMAP=br-abnt2 > /etc/vconsole.conf
 <br>
 
-**Nome do computador**
+#### Nome do computador
 
     # echo meuhostname > /etc/hostname
     
@@ -103,36 +103,36 @@
     127.0.1.1   meuhostname.localdomain meuhostname
 <br>
 
-**Configurar conexão** (Temporario)
+#### Configurar conexão (Temporario)
 
     # systemctl enable dhcpcd
 <br>
 
-**Initramfs**
+#### Initramfs
 
     # mkinitcpio -p linux
 <br>
 
-**Senha do Root**
+#### Senha do Root
 
     # passwd
 <br>
 
-**Criar usuário**
+#### Criar usuário
 
     # useradd -m -g users -G log,sys,wheel,rfkill,dbus -s /bin/bash usuario
     # passwd usuario
     # sed -i '/%wheel ALL=(ALL) ALL/s/^#//' /etc/sudoers
 <br>
 
-**Grub**
+#### Grub
 
     # pacman -S grub os-prober intel-ucode ntfs-3g
     # grub-install --target=i386-pc /dev/sdX
     # grub-mkconfig -o /boot/grub/grub.cfg
 <br>
 
-**Reiniciar**
+#### Reiniciar
 
     # exit
     # umount -R /mnt
