@@ -1,3 +1,5 @@
+## Índice
+
 1. [Pre Instalação](#pre-instalação)
      - [Layout do Teclado](#layout-do-teclado)
        - [Modificar o layout](#modificar-o-layout)
@@ -32,7 +34,6 @@
 <br>
 
 ## Pre Instalação
-<br>
 
 ### Layout do Teclado
  
