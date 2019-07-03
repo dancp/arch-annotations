@@ -154,6 +154,22 @@ Item {
 ```
 <br>
 
+Arch mirrorlist
+
+    https://www.archlinux.org/mirrorlist/
+    
+    ## Brazil
+    #Server = http://br.mirror.archlinux-br.org/$repo/os/$arch
+    #Server = http://archlinux.c3sl.ufpr.br/$repo/os/$arch
+    #Server = http://www.caco.ic.unicamp.br/archlinux/$repo/os/$arch
+    #Server = https://www.caco.ic.unicamp.br/archlinux/$repo/os/$arch
+    #Server = http://linorg.usp.br/archlinux/$repo/os/$arch
+    #Server = http://pet.inf.ufsc.br/mirrors/archlinux/$repo/os/$arch
+    #Server = http://archlinux.pop-es.rnp.br/$repo/os/$arch
+    #Server = http://mirror.ufam.edu.br/archlinux/$repo/os/$arch
+    #Server = http://mirror.ufscar.br/archlinux/$repo/os/$arch
+<br>
+
 - [Instalação](https://github.com/dancp/arch-anotations/blob/master/arch-install.md)
 - [Pós Instalação](https://github.com/dancp/arch-anotations/blob/master/arch-post-install.md)
 - [Melhorias](https://github.com/dancp/arch-annotations/blob/master/tweaks.md)
