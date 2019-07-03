@@ -1,6 +1,7 @@
 ## Pre Instalação
  
  > Layout do Teclado
+ 
 **Modificar o layout**
 
     # loadkeys br-abnt2
@@ -13,6 +14,7 @@
     # timedatectl set-ntp true
 
 > Partição dos Discos
+
 **Listar discos**
 
     # fdisk -l
