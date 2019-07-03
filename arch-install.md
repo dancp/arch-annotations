@@ -1,7 +1,6 @@
 ## Pre Instalação
  
-### Layout do Teclado
-
+ > Layout do Teclado
 **Modificar o layout**
 
     # loadkeys br-abnt2
@@ -9,13 +8,11 @@
     # localectl set-keymap br-abnt2
 
     
-### Atualizar o Relógio do Sistema
+> Atualizar o Relógio do Sistema
 
     # timedatectl set-ntp true
 
-
-### Partição dos Discos
-
+> Partição dos Discos
 **Listar discos**
 
     # fdisk -l
