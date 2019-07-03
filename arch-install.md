@@ -1,6 +1,6 @@
-**Pre Instalação
+**Pre Instalação**
  
-|Layout do Teclado|
+> Layout do Teclado
 
 -Modificar o layout
 
