@@ -154,7 +154,7 @@ Item {
 ```
 <br>
 
-Arch mirrorlist
+**Arch mirrorlist**
 
     https://www.archlinux.org/mirrorlist/
     
