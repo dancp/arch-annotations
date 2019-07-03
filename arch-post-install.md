@@ -50,8 +50,8 @@
 
 **Geral**
 
-    # pacman -S xdg-user-dirs pacman-contrib fakeroot jshon expac git wget
-    # pacman -S gimp telegram-desktop wine qbittorrent firefox libreoffice latte-dock
+    # pacman -S xdg-user-dirs pacman-contrib fakeroot jshon expac git wget networkmanager-openvpn
+    # pacman -S gimp telegram-desktop wine qbittorrent firefox libreoffice latte-dock wine
 <br>
 
 **Openshh**
