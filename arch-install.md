@@ -107,6 +107,11 @@
     # systemctl enable dhcpcd
 <br>
 
+**Initramfs**
+
+    # mkinitcpio -p linux
+<br>
+
 **Senha do Root**
 
     # passwd
