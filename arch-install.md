@@ -1,14 +1,12 @@
 ## Índice
 
 1. [Pre Instalação](#pre-instalação)
-     - [Layout do Teclado](#layout-do-teclado)
-       - [Modificar o layout](#modificar-o-layout)
-     - [Atualizar o Relógio do Sistema](#atualizar-o-relógio-do-sistema)
-     - [Partição dos Discos](#partição-dos-discos)
-       - [Listar discos](#listar-discos)
-       - [Criar partições](#criar-partições)
-       - [Formatar as partições](#formatar-as-partições)
-       - [Montar os sistemas de arquivos](#montar-os-sistemas-de-arquivos)
+    - [Configurar Layout do Teclado](#configurar-layout-do-teclado)
+    - [Atualizar o Relógio do Sistema](#atualizar-o-relógio-do-sistema)
+    - [Listar discos](#listar-discos)
+    - [Criar partições](#criar-partições)
+    - [Formatar as partições](#formatar-as-partições)
+    - [Montar os sistemas de arquivos](#montar-os-sistemas-de-arquivos)
 2. [Instalação](#instalação)
     - [Mirrors](#mirrors)
     - [Instalar os pacotes base](#instalar-os-pacotes-base)
@@ -35,21 +33,17 @@
 
 ## Pre Instalação
 
-### Layout do Teclado
- 
-#### Modificar o layout
+#### Configurar Layout do Teclado
 
     # loadkeys br-abnt2
     ou
     # localectl set-keymap br-abnt2
 <br>
 
-### Atualizar o Relógio do Sistema
+#### Atualizar o Relógio do Sistema
 
     # timedatectl set-ntp true
 <br>
-
-### Partição dos Discos
 
 #### Listar discos
 
