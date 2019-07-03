@@ -1,3 +1,15 @@
+1. [Pre Instalação](#pre-instalação)
+  - [Layout do Teclado](#layout-do-teclado)
+    - [Modificar o layout](#modificar-o-layout)
+  - [Atualizar o Relógio do Sistema](#atualizar-o-relógio-do-sistema)
+  - [Partição dos Discos](#partição-dos-discos)
+    - [Listar discos](#listar-discos)
+    - [Criar partições](#criar-partições)
+    - [Formatar as partições](#formatar-as-partições)
+    - [Montar os sistemas de arquivos](#montar-os-sistemas-de-arquivos)
+
+<br>
+
 ## Pre Instalação
 <br>
 
