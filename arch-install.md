@@ -1,41 +1,39 @@
-**Pre Instalação**
+## Pre Instalação
  
-> Layout do Teclado
+### Layout do Teclado
 
-Modificar o layout
+**Modificar o layout**
 
     # loadkeys br-abnt2
     ou
     # localectl set-keymap br-abnt2
 
     
-> Atualizar o Relógio do Sistema
+### Atualizar o Relógio do Sistema
 
     # timedatectl set-ntp true
 
 
-> Partição dos Discos
+### Partição dos Discos
 
-Listar discos
+**Listar discos**
 
     # fdisk -l
 
-Criar partições
+**Criar partições**
 
     # cfdisk
 
-Formatar as partições
+**Formatar as partições**
 
     # mkfs.ext4 /dev/sdX1
     
     # mkswap /dev/sdX2
     # swapon /dev/sdX2
 
-Montar os sistemas de arquivos
+**Montar os sistemas de arquivos**
 
     # mount /dev/sdX1 /mnt
-
-
 
 
 **Instalação**
