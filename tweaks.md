@@ -1,5 +1,3 @@
-### Tweaks
- 
 **Arc Theme**
  
     # pacman -S kvantum-qt5 arc-kde kvantum-theme-arc arc-gtk-theme papirus-icon-theme
