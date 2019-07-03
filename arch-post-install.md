@@ -1,6 +1,9 @@
+### Pós
+
 **Habilitar suporte 32-bits**
 
     # nano /etc/pacman.conf
+    
     [multilib]
     Include = /etc/pacman.d/mirrorlist
 <br>
@@ -27,9 +30,9 @@
     # pacman -S plasma-desktop kdebase
     ou
     # pacman -S plasma-desktop dolphin konsole
-    # pacman -S ark gwenview spectacle kate okular kcalc
-    # pacman -S kde-gtk-config kinfocenter plasma-pa user-manager polkit-kde-agent kdialog plasma-nm kwallet kwallet-pam kwalletmanager
-    # pacman -S kolourpaint kruler kget kdf kfind kdeconnect discover
+    # ark gwenview spectacle kate okular kcalc
+    # kde-gtk-config kinfocenter plasma-pa user-manager polkit-kde-agent kdialog plasma-nm kwallet kwallet-pam kwalletmanager
+    # kolourpaint kruler kget kdf kfind kdeconnect discover
 <br>
 
 **Display Manager**
