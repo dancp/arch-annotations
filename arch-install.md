@@ -18,23 +18,23 @@
 **Listar discos**
 
     # fdisk -l
-
+<br>
 **Criar partições**
 
     # cfdisk
-
+<br>
 **Formatar as partições**
 
     # mkfs.ext4 /dev/sdX1
     
     # mkswap /dev/sdX2
     # swapon /dev/sdX2
-
+<br>
 **Montar os sistemas de arquivos**
 
     # mount /dev/sdX1 /mnt
 
-<br><br>
+<br>
 
 ## Instalação
 
