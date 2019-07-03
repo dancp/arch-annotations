@@ -74,9 +74,6 @@
  
     # sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
- **Relógio/Dual boot W10**
- 
-    # timedatectl set-local-rtc 1 --adjust-system-clock
 
  **Arc Theme**
  
@@ -89,10 +86,14 @@
 
 ### Tweaks
  
-  Wallpapers
+  **Wallpapers**
   
     # ln -s $HOME/Pictures/Wallpapers $HOME/.local/share/wallpapers
-    
+
+ **Relógio/Dual boot W10**
+ 
+    # timedatectl set-local-rtc 1 --adjust-system-clock
+
   **Codecs**
   
     # pacman -S --needed opencl-nvidia lib32-opencl-nvidia lib32-libvdpau libva-vdpau-driver mesa-vdpau lib32-mesa-vdpau
