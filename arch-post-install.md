@@ -41,28 +41,26 @@
 **Network Manager** (Opcional)
 
     # systemctl enable NetworkManager.service
+<br><br>
+
+### Extras
+
+**Geral**
+
+    # pacman -S xdg-user-dirs pacman-contrib fakeroot jshon expac git wget
+    # pacman -S gimp telegram-desktop wine qbittorrent firefox libreoffice latte-dock
 <br>
 
-**Extras**
+**Openshh**
 
-    # pacman -S xdg-user-dirs pacman-contrib fakeroot jshon expac git wget openssh pavucontrol-qt pulseeffects
-<br>
-
- **Codecs**
- 
-    # pacman -S a52dec faac faad2 flac jasper lame libdca libdv libmad libmpeg2 libtheora libvorbis libxv wavpack x264 xvidcore 
-<br>
+    # pacman -S openssh
+    # systemctl enable sshd.service
 
  **Firewall**
  
     # pacman -S gufw
     # ufw enable
     # systemctl enable ufw.service
-<br>
-
- **Fonts**
- 
-    # pacman -S noto-fonts ttf-ubuntu-font-family ttf-dejavu ttf-freefont ttf-liberation ttf-droid ttf-inconsolata ttf-roboto terminus-font ttf-font-awesome
 <br>
 
  **Steam**
@@ -77,47 +75,19 @@
     # makepkg -si
 <br>
 
- **Zsh**
+ **Fonts**
  
-    # pacman -S zsh
-    # chsh -l
-    # chsh -s full-path-to-shell
-<br>
- 
- **Oh My Zsh**
- 
-    # sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-<br>
-
- **Arc Theme**
- 
-    # pacman -S kvantum-qt5 arc-kde kvantum-theme-arc arc-gtk-theme papirus-icon-theme
-<br>
-
- **Geral**
- 
-    # pacman -S gimp telegram-desktop wine qbittorrent firefox libreoffice latte-dock
-<br><br>
-
-### Tweaks
- 
-  **Wallpapers**
-  
-    # ln -s $HOME/Pictures/Wallpapers $HOME/.local/share/wallpapers
-<br>
-
- **Relógio/Dual boot W10**
- 
-    # timedatectl set-local-rtc 1 --adjust-system-clock
-<br>
-
-  **Codecs**
-  
-    # pacman -S --needed opencl-nvidia lib32-opencl-nvidia lib32-libvdpau libva-vdpau-driver mesa-vdpau lib32-mesa-vdpau
-    # pacman -S --needed gst-{plugins-{bad,ugly},libav} libdvdcss libquicktime mencoder x264 lib32-gst-plugins-{base,good}
-    # pacman -S --needed ttf-{croscore,roboto,ubuntu-font-family} wqy-zenhei otf-{font-awesome,fira-sans,fira-code}
+    # pacman -S noto-fonts ttf-ubuntu-font-family ttf-dejavu ttf-freefont ttf-liberation ttf-droid ttf-inconsolata ttf-roboto terminus-font ttf-font-awesome
 <br>
 
   **pulseeffects**
   
-    # pacman -S boost-libs glibmm gst-plugins-bad gst-plugins-good gstreamer gtk3 gtkmm3 libebur128 libpulse libsamplerate libsigc++ libsndfile lilv zita-convolver calf lsp-plugins mda.lv2 rubberband zam-plugins appstream-glib boost itstool meson
+    # pacman -S pavucontrol-qt pulseeffects boost-libs glibmm gst-plugins-bad gst-plugins-good gstreamer gtk3 gtkmm3 libebur128 libpulse libsamplerate libsigc++ libsndfile lilv zita-convolver calf lsp-plugins mda.lv2 rubberband zam-plugins appstream-glib boost itstool meson
+<br>
+
+  **Codecs**
+
+    # pacman -S a52dec faac faad2 flac jasper lame libdca libdv libmad libmpeg2 libtheora libvorbis libxv wavpack x264 xvidcore 
+    # pacman -S --needed opencl-nvidia lib32-opencl-nvidia lib32-libvdpau libva-vdpau-driver mesa-vdpau lib32-mesa-vdpau
+    # pacman -S --needed gst-{plugins-{bad,ugly},libav} libdvdcss libquicktime mencoder x264 lib32-gst-plugins-{base,good}
+    # pacman -S --needed ttf-{croscore,roboto,ubuntu-font-family} wqy-zenhei otf-{font-awesome,fira-sans,fira-code}
