@@ -34,6 +34,7 @@
 
     # mount /dev/sdX1 /mnt
 
+<br><br>
 
 **Instalação**
 
@@ -47,8 +48,7 @@ Instalar os pacotes base
 
     # pacstrap /mnt base base-devel
 
-
-
+<br><br>
 
 **Configuração do Sistema**
 
@@ -115,3 +115,7 @@ Reiniciar
     # exit
     # umount -R /mnt
     # reboot
+
+<br><br>
+
+[Post Install](https://github.com/dancp/arch-anotations/blob/master/arch-post-install.md)
