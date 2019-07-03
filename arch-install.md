@@ -1,8 +1,8 @@
-## Pre Instalação
+# Pre Instalação
  
- > Layout do Teclado
+## Layout do Teclado
  
-**Modificar o layout**
+### Modificar o layout
 
     # loadkeys br-abnt2
     ou
