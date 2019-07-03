@@ -12,16 +12,19 @@
 > Atualizar o Relógio do Sistema
 
     # timedatectl set-ntp true
+<br>
 
 > Partição dos Discos
 
 **Listar discos**
 
     # fdisk -l
+<br>
 
 **Criar partições**
 
     # cfdisk
+<br>
 
 **Formatar as partições**
 
@@ -29,6 +32,7 @@
     
     # mkswap /dev/sdX2
     # swapon /dev/sdX2
+<br>
 
 **Montar os sistemas de arquivos**
 
@@ -43,6 +47,7 @@
     > /etc/pacman.d/mirrorlist
     # sed "s/^Ser/#Ser/" /etc/pacman.d/mirrorlist > /tmp/mirrors
     # sed '/Brazil/{n;s/^#//}' /tmp/mirrors > /etc/pacman.d/mirrorlist
+<br>
 
 **Instalar os pacotes base**
 
@@ -55,15 +60,18 @@
 **Fstab**
 
     # genfstab -p /mnt >> /mnt/etc/fstab
+<br>
 
 **Chroot**
 
     # arch-chroot /mnt
+<br>
 
 **Fuso horário**
 
     # ln -sf /usr/share/zoneinfo/America/Sao_Paulo /etc/localtime
     # hwclock --systohc
+<br>
 
 **Localização**
 
@@ -71,15 +79,18 @@
     > en_US.UTF-8 UTF-8
     > pt_BR.UTF-8 UTF-8
     # locale-gen
-    
+<br>
+  
 **Linguagem**
 
     # echo LANG=en_US.UTF-8 > /etc/locale.conf
     # export LANG=en_US.UTF-8 
+<br>
 
 **Layout do teclado**
 
     # echo KEYMAP=br-abnt2 > /etc/vconsole.conf
+<br>
 
 **Nome do computador**
 
@@ -89,21 +100,23 @@
     127.0.0.1   localhost.localdomain   localhost
     ::1         localhost.localdomain   localhost
     127.0.1.1   meuhostname.localdomain meuhostname
+<br>
 
 **Configurar conexão** (Temporario)
 
     # systemctl enable dhcpcd
+<br>
 
 **Senha do Root**
 
     # passwd
+<br>
 
 **Criar usuário**
 
     # useradd -m -g users -G log,sys,wheel,rfkill,dbus -s /bin/bash usuario
     # passwd usuario
     # sed -i '/%wheel ALL=(ALL) ALL/s/^#//' /etc/sudoers
-    
 <br>
 
 **Grub**
@@ -111,7 +124,6 @@
     # pacman -S grub os-prober intel-ucode ntfs-3g
     # grub-install --target=i386-pc /dev/sdX
     # grub-mkconfig -o /boot/grub/grub.cfg
-    
 <br>
 
 **Reiniciar**
