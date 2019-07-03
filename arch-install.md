@@ -36,6 +36,8 @@ Montar os sistemas de arquivos
     # mount /dev/sdX1 /mnt
 
 
+
+
 **Instalação**
 
 Mirrors
@@ -47,6 +49,8 @@ Mirrors
 Instalar os pacotes base
 
     # pacstrap /mnt base base-devel
+
+
 
 
 **Configuração do Sistema**
