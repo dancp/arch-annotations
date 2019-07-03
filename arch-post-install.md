@@ -90,7 +90,7 @@
 
   **Codecs**
 
-    # pacman -S a52dec faac faad2 flac jasper lame libdca libdv libmad libmpeg2 libtheora libvorbis libxv wavpack x264 xvidcore 
+    # pacman -S --needed a52dec faac faad2 flac jasper lame libdca libdv libmad libmpeg2 libtheora libvorbis libxv wavpack x264 xvidcore 
     # pacman -S --needed opencl-nvidia lib32-opencl-nvidia lib32-libvdpau libva-vdpau-driver mesa-vdpau lib32-mesa-vdpau
     # pacman -S --needed gst-{plugins-{bad,ugly},libav} libdvdcss libquicktime mencoder x264 lib32-gst-plugins-{base,good}
     # pacman -S --needed ttf-{croscore,roboto,ubuntu-font-family} wqy-zenhei otf-{font-awesome,fira-sans,fira-code}
