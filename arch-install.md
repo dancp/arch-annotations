@@ -10,7 +10,25 @@
 2. [Instalação](#instalação)
     - [Mirrors](#mirrors)
     - [Instalar os pacotes base](#instalar-os-pacotes-base)
+3. [Configuração do Sistema](#configuração-do-sistema) 
+    - [Fstab](#fstab)
+    - [Chroot](#chroot)
+    - [Fuso horário](#fuso-horário)
+    - [Localização](#localização)
+    - [Linguagem](#linguagem)
+    - [Layout do teclado](#layout-do-teclado)
+    - [Nome do computador](#nome-do-computador)
+    - [Configurar conexão (Temporario)](#configurar-conexão-temporario)
+    - [Initramfs](#initramfs)
+    - [Senha do Root](#senha-do-root)
+    - [Criar usuário](#criar-usuário)
+    - [Grub](#grub)
+    - [Reiniciar](#reiniciar)
 
+
+- [Instalação](https://github.com/dancp/arch-anotations/blob/master/arch-install.md)
+- [Pós Instalação](https://github.com/dancp/arch-anotations/blob/master/arch-post-install.md)
+- [Melhorias](https://github.com/dancp/arch-annotations/blob/master/tweaks.md)
 <br>
 
 ## Pre Instalação
@@ -152,9 +170,3 @@
     # exit
     # umount -R /mnt
     # reboot
-
-<br>
-
-- [Instalação](https://github.com/dancp/arch-anotations/blob/master/arch-install.md)
-- [Pós Instalação](https://github.com/dancp/arch-anotations/blob/master/arch-post-install.md)
-- [Melhorias](https://github.com/dancp/arch-annotations/blob/master/tweaks.md)
