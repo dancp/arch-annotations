@@ -18,9 +18,11 @@
     # fdisk -l
 
 -Criar partições
+
     # cfdisk
 
 -Formatar as partições
+
     # mkfs.ext4 /dev/sdX1
     
     # mkswap /dev/sdX2
