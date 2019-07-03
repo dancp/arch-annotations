@@ -18,23 +18,23 @@
 **Listar discos**
 
     # fdisk -l
-<br>
+
 **Criar partições**
 
     # cfdisk
-<br>
+
 **Formatar as partições**
 
     # mkfs.ext4 /dev/sdX1
     
     # mkswap /dev/sdX2
     # swapon /dev/sdX2
-<br>
+
 **Montar os sistemas de arquivos**
 
     # mount /dev/sdX1 /mnt
 
-<br>
+<br><br>
 
 ## Instalação
 
@@ -103,12 +103,16 @@
     # useradd -m -g users -G log,sys,wheel,rfkill,dbus -s /bin/bash usuario
     # passwd usuario
     # sed -i '/%wheel ALL=(ALL) ALL/s/^#//' /etc/sudoers
+    
+<br>
 
 **Grub**
 
     # pacman -S grub os-prober intel-ucode ntfs-3g
     # grub-install --target=i386-pc /dev/sdX
     # grub-mkconfig -o /boot/grub/grub.cfg
+    
+<br>
 
 **Reiniciar**
 
@@ -116,6 +120,6 @@
     # umount -R /mnt
     # reboot
 
-<br><br>
+<br>
 
 [Post Install](https://github.com/dancp/arch-anotations/blob/master/arch-post-install.md)
