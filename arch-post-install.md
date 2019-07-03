@@ -85,8 +85,9 @@
  **Geral**
  
     # pacman -S gimp telegram-desktop wine qbittorrent firefox libreoffice latte-dock
+<br>
 
- > Tweaks
+### Tweaks
  
   Wallpapers
   
