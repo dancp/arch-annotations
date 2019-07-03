@@ -94,3 +94,8 @@
     # pacman -S --needed opencl-nvidia lib32-opencl-nvidia lib32-libvdpau libva-vdpau-driver mesa-vdpau lib32-mesa-vdpau
     # pacman -S --needed gst-{plugins-{bad,ugly},libav} libdvdcss libquicktime mencoder x264 lib32-gst-plugins-{base,good}
     # pacman -S --needed ttf-{croscore,roboto,ubuntu-font-family} wqy-zenhei otf-{font-awesome,fira-sans,fira-code}
+<br>
+
+- [Instalação](https://github.com/dancp/arch-anotations/blob/master/arch-install.md)
+- [Pós Instalação](https://github.com/dancp/arch-anotations/blob/master/arch-post-install.md)
+- [Melhorias](https://github.com/dancp/arch-annotations/blob/master/tweaks.md)
