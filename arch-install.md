@@ -7,8 +7,8 @@
     # loadkeys br-abnt2
     ou
     # localectl set-keymap br-abnt2
+<br>
 
-    
 > Atualizar o Relógio do Sistema
 
     # timedatectl set-ntp true
