@@ -2,19 +2,19 @@
  
 > Layout do Teclado
 
--Modificar o layout
+Modificar o layout
 
     # loadkeys br-abnt2
     ou
     # localectl set-keymap br-abnt2
 
     
-|Atualizar o Relógio do Sistema|
+> Atualizar o Relógio do Sistema
 
     # timedatectl set-ntp true
 
 
-|Partição dos Discos|
+> Partição dos Discos
 
 Listar discos
 
@@ -36,7 +36,7 @@ Montar os sistemas de arquivos
     # mount /dev/sdX1 /mnt
 
 
-**Instalação
+**Instalação**
 
 Mirrors
 
@@ -49,7 +49,7 @@ Instalar os pacotes base
     # pacstrap /mnt base base-devel
 
 
-**Configuração do Sistema
+**Configuração do Sistema**
 
 Fstab
 
