@@ -44,6 +44,11 @@
 **Network Manager** (Opcional)
 
     # systemctl enable NetworkManager.service
+    
+    /etc/NetworkManager/conf.d/dhcp-client.conf
+
+    [main]
+    dhcp=dhclient
 <br><br>
 
 ### Extras
@@ -95,6 +100,14 @@
     # pacman -S --needed gst-{plugins-{bad,ugly},libav} libdvdcss libquicktime mencoder x264 lib32-gst-plugins-{base,good}
     # pacman -S --needed ttf-{croscore,roboto,ubuntu-font-family} wqy-zenhei otf-{font-awesome,fira-sans,fira-code}
 <br>
+
+fstab
+
+    # <file system> <dir> <type> <options> <dump> <pass>
+    # UUID=fed816ab-65fd-4fbe-b4e0-c4443224cc7f
+    /dev/sda4               /               ext4            rw,relatime     0 1
+    #UUID=62F90749644D8BBC
+    /dev/sda3       /run/media/dancp/Files/ ntfs    defaults        0       0
 
 - [Instalação](https://github.com/dancp/arch-anotations/blob/master/arch-install.md)
 - [Pós Instalação](https://github.com/dancp/arch-anotations/blob/master/arch-post-install.md)
