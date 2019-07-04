@@ -36,8 +36,12 @@ zsh-syntax-highlight zsh-autosuggestions
 <br>
 
 **Firefox**
-
-    /home/??/.mozilla/firefox/??
+```
+  new string
+    widget.content.gtk-theme-override
+  value=Arc
+```
+    /home/dancp/.mozilla/firefox/???.default-release
     chrome/userChrome.css
   
 ```
@@ -168,6 +172,15 @@ Item {
     #Server = http://archlinux.pop-es.rnp.br/$repo/os/$arch
     #Server = http://mirror.ufam.edu.br/archlinux/$repo/os/$arch
     #Server = http://mirror.ufscar.br/archlinux/$repo/os/$arch
+<br>
+
+#### fstab
+
+    # <file system> <dir> <type> <options> <dump> <pass>
+    # UUID=fed816ab-65fd-4fbe-b4e0-c4443224cc7f
+    /dev/sda4               /               ext4            rw,relatime     0 1
+    #UUID=62F90749644D8BBC
+    /dev/sda3       /run/media/dancp/Files/ ntfs    defaults        0       0
 <br>
 
 - [Instalação](https://github.com/dancp/arch-anotations/blob/master/arch-install.md)
