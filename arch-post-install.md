@@ -1,6 +1,9 @@
-### Pós
+## Índice
 
-**Habilitar suporte 32-bits**
+
+## Pós
+
+#### Habilitar suporte 32-bits
 
     # nano /etc/pacman.conf
     
@@ -8,22 +11,22 @@
     Include = /etc/pacman.d/mirrorlist
 <br>
 
-**Xorg**
+#### Xorg
 
     # pacman -S xorg
 <br>
 
-**Nvidia**
+#### Nvidia
 
     # pacman -S nvidia-390xx nvidia-390xx-utils lib32-nvidia-390xx-utils nvidia-390xx-settings
 <br>
 
-**Som**
+#### Som
 
     # pacman -S alsa-utils alsa-lib alsa-oss pulseaudio pulseaudio-alsa lib32-libpulse lib32-alsa-plugins
 <br>
 
-**KDE Plasma**
+#### KDE Plasma
 
     # pacman -S plasma-desktop dolphin konsole
     # ark gwenview spectacle kate okular kcalc
@@ -32,13 +35,13 @@
     # kolourpaint kruler kget kdf kfind kdeconnect discover
 <br>
 
-**Display Manager**
+#### Display Manager
 
     # pacman -S sddm sddm-kcm
     # systemctl enable sddm.service
 <br>
 
-**Network Manager** (Opcional)
+#### Network Manager
 
     # pacman -S dhclient
     
@@ -49,63 +52,66 @@
     # systemctl enable NetworkManager.service
 <br><br>
 
-### Extras
+## Extras
 
-**Geral**
+#### Geral
 
-    # pacman -S xdg-user-dirs pacman-contrib fakeroot jshon expac git wget networkmanager-openvpn
+    # pacman -S xdg-user-dirs pacman-contrib jshon expac git wget networkmanager-openvpn
     # pacman -S gimp telegram-desktop wine qbittorrent firefox libreoffice latte-dock flameshot
 <br>
 
-**Openshh**
+#### Openshh
 
     # pacman -S openssh
     # systemctl enable sshd.service
 
- **Firewall**
+#### Firewall
  
     # pacman -S gufw
     # ufw enable
     # systemctl enable ufw.service
+```    
+# ufw default deny
+# ufw allow from 192.168.0.0/24
+# ufw limit SSH
+```
+```
+KDEConnect
+sudo ufw allow 1714:1764/udp
+sudo ufw allow 1714:1764/tcp
+sudo ufw reload
+```
 <br>
 
- **Steam**
+#### Steam
  
     # pacman -S steam  lib32-libpulse lib32-libxtst libxfixes lib32-libxrandr lib32-glib2 lib32-gtk2 lib32-gdk-pixbuf2 lib32-openal
 <br>
 
- **Yay**
+#### Yay
  
     # git clone https://aur.archlinux.org/yay.git
     # cd yay
     # makepkg -si
 <br>
 
- **Fonts**
+#### Fonts
  
     # pacman -S noto-fonts ttf-ubuntu-font-family ttf-dejavu ttf-freefont ttf-liberation ttf-droid ttf-inconsolata ttf-roboto terminus-font ttf-font-awesome
 <br>
 
-  **pulseeffects**
+#### pulseeffects
   
     # pacman -S pavucontrol-qt pulseeffects boost-libs glibmm gst-plugins-bad gst-plugins-good gstreamer gtk3 gtkmm3 libebur128 libpulse libsamplerate libsigc++ libsndfile lilv zita-convolver calf lsp-plugins mda.lv2 rubberband zam-plugins appstream-glib boost itstool meson
 <br>
 
-  **Codecs**
+#### Codecs
 
     # pacman -S --needed a52dec faac faad2 flac jasper lame libdca libdv libmad libmpeg2 libtheora libvorbis libxv wavpack x264 xvidcore 
     # pacman -S --needed opencl-nvidia390xx lib32-opencl-nvidia-390xx lib32-libvdpau libva-vdpau-driver mesa-vdpau lib32-mesa-vdpau
     # pacman -S --needed gst-{plugins-{bad,ugly},libav} libdvdcss libquicktime mencoder x264 lib32-gst-plugins-{base,good}
     # pacman -S --needed ttf-{croscore,roboto,ubuntu-font-family} wqy-zenhei otf-{font-awesome,fira-sans,fira-code}
 <br>
-
-fstab
-
-    # <file system> <dir> <type> <options> <dump> <pass>
-    # UUID=fed816ab-65fd-4fbe-b4e0-c4443224cc7f
-    /dev/sda4               /               ext4            rw,relatime     0 1
-    #UUID=62F90749644D8BBC
-    /dev/sda3       /run/media/dancp/Files/ ntfs    defaults        0       0
 
 - [Instalação](https://github.com/dancp/arch-anotations/blob/master/arch-install.md)
 - [Pós Instalação](https://github.com/dancp/arch-anotations/blob/master/arch-post-install.md)
