@@ -133,3 +133,7 @@ sudo ufw reload
 #### Steam
  
     # pacman -S steam  lib32-libpulse lib32-libxtst libxfixes lib32-libxrandr lib32-glib2 lib32-gtk2 lib32-gdk-pixbuf2 lib32-openal
+<br>
+
+- [Instalação](https://github.com/dancp/arch-anotations/blob/master/arch-install.md)
+- [Melhorias](https://github.com/dancp/arch-annotations/blob/master/tweaks.md)
