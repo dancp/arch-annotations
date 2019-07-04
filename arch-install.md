@@ -18,7 +18,6 @@
     - [Linguagem](#linguagem)
     - [Layout do teclado](#layout-do-teclado)
     - [Nome do computador](#nome-do-computador)
-    - [Configurar conexão (Temporario)](#configurar-conexão-temporario)
     - [Initramfs](#initramfs)
     - [Senha do Root](#senha-do-root)
     - [Criar usuário](#criar-usuário)
@@ -127,11 +126,6 @@
     127.0.0.1   localhost.localdomain   localhost
     ::1         localhost.localdomain   localhost
     127.0.1.1   meuhostname.localdomain meuhostname
-<br>
-
-#### Configurar conexão (Temporario)
-
-    # systemctl enable dhcpcd
 <br>
 
 #### Initramfs
