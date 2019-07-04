@@ -35,6 +35,11 @@ zsh-syntax-highlight zsh-autosuggestions
     # timedatectl set-local-rtc 1 --adjust-system-clock
 <br>
 
+#### Salvar configurações no alsamixer
+    # sudo alsactl store
+
+<br>
+
 **Firefox**
 ```
   new string
