@@ -1,5 +1,26 @@
 ## Índice
 
+1. [Pós](#pós)
+    - [Habilitar suporte 32-bits](#habilitar-suporte-32-bits)
+    - [Xorg](#xorg)
+    - [Nvidia](#nvidia)
+    - [Som](#som)
+    - [KDE Plasma](#kde-plasma)
+    - [Display Manager](#display-manager)
+    - [Network Manager](#network-manager)
+2. [Extras](#extras)
+    - [Geral](#geral)
+    - [Firewall](#firewall)
+    - [Fonts](#fonts)
+    - [Codecs](#codecs)
+    - [Pulse Effects](#pulse-effects)
+    - [Openssh](#openssh)
+    - [Yay](#yay)
+    - [Steam](#steam)
+    
+- [Instalação](https://github.com/dancp/arch-anotations/blob/master/arch-install.md)
+- [Melhorias](https://github.com/dancp/arch-annotations/blob/master/tweaks.md)
+<br>
 
 ## Pós
 
@@ -60,11 +81,6 @@
     # pacman -S gimp telegram-desktop wine qbittorrent firefox libreoffice latte-dock flameshot
 <br>
 
-#### Openshh
-
-    # pacman -S openssh
-    # systemctl enable sshd.service
-
 #### Firewall
  
     # pacman -S gufw
@@ -83,9 +99,28 @@ sudo ufw reload
 ```
 <br>
 
-#### Steam
+#### Fonts
  
-    # pacman -S steam  lib32-libpulse lib32-libxtst libxfixes lib32-libxrandr lib32-glib2 lib32-gtk2 lib32-gdk-pixbuf2 lib32-openal
+    # pacman -S noto-fonts ttf-ubuntu-font-family ttf-dejavu ttf-freefont ttf-liberation ttf-droid ttf-inconsolata ttf-roboto terminus-font ttf-font-awesome
+    # pacman -S --needed ttf-{croscore,roboto,ubuntu-font-family} wqy-zenhei otf-{font-awesome,fira-sans,fira-code}
+<br>
+
+#### Codecs
+
+    # pacman -S --needed a52dec faac faad2 flac jasper lame libdca libdv libmad libmpeg2 libtheora libvorbis libxv wavpack x264 xvidcore 
+    # pacman -S --needed opencl-nvidia390xx lib32-opencl-nvidia-390xx lib32-libvdpau libva-vdpau-driver mesa-vdpau lib32-mesa-vdpau
+    # pacman -S --needed gst-{plugins-{bad,ugly},libav} libdvdcss libquicktime mencoder x264 lib32-gst-plugins-{base,good}
+<br>
+
+#### Pulse Effects
+  
+    # pacman -S pavucontrol-qt pulseeffects boost-libs glibmm gst-plugins-bad gst-plugins-good gstreamer gtk3 gtkmm3 libebur128 libpulse libsamplerate libsigc++ libsndfile lilv zita-convolver calf lsp-plugins mda.lv2 rubberband zam-plugins appstream-glib boost itstool meson
+<br>
+
+#### Openssh
+
+    # pacman -S openssh
+    # systemctl enable sshd.service
 <br>
 
 #### Yay
@@ -95,24 +130,6 @@ sudo ufw reload
     # makepkg -si
 <br>
 
-#### Fonts
+#### Steam
  
-    # pacman -S noto-fonts ttf-ubuntu-font-family ttf-dejavu ttf-freefont ttf-liberation ttf-droid ttf-inconsolata ttf-roboto terminus-font ttf-font-awesome
-<br>
-
-#### pulseeffects
-  
-    # pacman -S pavucontrol-qt pulseeffects boost-libs glibmm gst-plugins-bad gst-plugins-good gstreamer gtk3 gtkmm3 libebur128 libpulse libsamplerate libsigc++ libsndfile lilv zita-convolver calf lsp-plugins mda.lv2 rubberband zam-plugins appstream-glib boost itstool meson
-<br>
-
-#### Codecs
-
-    # pacman -S --needed a52dec faac faad2 flac jasper lame libdca libdv libmad libmpeg2 libtheora libvorbis libxv wavpack x264 xvidcore 
-    # pacman -S --needed opencl-nvidia390xx lib32-opencl-nvidia-390xx lib32-libvdpau libva-vdpau-driver mesa-vdpau lib32-mesa-vdpau
-    # pacman -S --needed gst-{plugins-{bad,ugly},libav} libdvdcss libquicktime mencoder x264 lib32-gst-plugins-{base,good}
-    # pacman -S --needed ttf-{croscore,roboto,ubuntu-font-family} wqy-zenhei otf-{font-awesome,fira-sans,fira-code}
-<br>
-
-- [Instalação](https://github.com/dancp/arch-anotations/blob/master/arch-install.md)
-- [Pós Instalação](https://github.com/dancp/arch-anotations/blob/master/arch-post-install.md)
-- [Melhorias](https://github.com/dancp/arch-annotations/blob/master/tweaks.md)
+    # pacman -S steam  lib32-libpulse lib32-libxtst libxfixes lib32-libxrandr lib32-glib2 lib32-gtk2 lib32-gdk-pixbuf2 lib32-openal
