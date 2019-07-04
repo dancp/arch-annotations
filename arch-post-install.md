@@ -1,6 +1,6 @@
 ## Índice
 
-1. [Pós](#pós)
+1. [Pós Instalação](#pós-instalação)
     - [Iniciar conexão com a Internet](#iniciar-conexão-com-a-internet)
     - [Habilitar suporte 32-bits](#habilitar-suporte-32-bits)
     - [Xorg](#xorg)
@@ -23,7 +23,7 @@
 - [Melhorias](https://github.com/dancp/arch-annotations/blob/master/tweaks.md)
 <br>
 
-## Pós
+## Pós Instalação
 
 #### Iniciar conexão com a Internet
 
