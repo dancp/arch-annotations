@@ -1,6 +1,7 @@
 ## Índice
 
 1. [Pós](#pós)
+    - [Iniciar conexão com a Internet](#iniciar-conexão-com-a-internet)
     - [Habilitar suporte 32-bits](#habilitar-suporte-32-bits)
     - [Xorg](#xorg)
     - [Nvidia](#nvidia)
@@ -23,6 +24,11 @@
 <br>
 
 ## Pós
+
+#### Iniciar conexão com a Internet
+
+    # systemctl start dhcpcd
+<br>
 
 #### Habilitar suporte 32-bits
 
