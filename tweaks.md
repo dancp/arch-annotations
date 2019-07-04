@@ -1,7 +1,7 @@
 ## Índice
 
 1. [Melhorias](#melhorias)
- - [Arc Theme](#arc-theme)
+   - [Arc Theme](#arc-theme)
 
 - [Instalação](https://github.com/dancp/arch-anotations/blob/master/arch-install.md)
 - [Pós Instalação](https://github.com/dancp/arch-anotations/blob/master/arch-post-install.md)
