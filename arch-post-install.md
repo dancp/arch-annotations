@@ -17,6 +17,7 @@
     - [Pulse Effects](#pulse-effects)
     - [Openssh](#openssh)
     - [Yay](#yay)
+    - [Wine](#wine)
     - [Steam](#steam)
     
 - [Instalação](https://github.com/dancp/arch-anotations/blob/master/arch-install.md)
@@ -138,8 +139,9 @@ sudo ufw reload
     # makepkg -si
 <br>
 
-Wine
-    # pacman -S wine wine_gecko wine-mono
+#### Wine
+
+    # pacman -S wine wine_gecko wine-mono winetricks
 <br>
 
 #### Steam
