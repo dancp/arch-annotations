@@ -36,7 +36,16 @@ zsh-syntax-highlight & zsh-autosuggestions
     source ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 <br>
 
-#### Wallpapers
+#### Cor no pacman
+    Color
+    # /etc/pacman.conf
+<br>
+
+#### Nano Syntax Highlighting
+    # curl https://raw.githubusercontent.com/scopatz/nanorc/master/install.sh | sh
+<br>
+
+#### Pasta de Wallpapers
   
     # ln -s $HOME/Pictures/Wallpapers $HOME/.local/share/wallpapers
 <br>
@@ -46,7 +55,7 @@ zsh-syntax-highlight & zsh-autosuggestions
     # timedatectl set-local-rtc 1 --adjust-system-clock
 <br>
 
-#### Salvar configurações no alsamixer
+#### Salvar configurações do alsamixer
 
     # sudo alsactl store
 
