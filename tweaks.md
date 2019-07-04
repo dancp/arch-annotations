@@ -169,6 +169,8 @@ Item {
 
 #### Arch mirrorlist
 
+    /etc/pacman.d/mirrorlist
+
     https://www.archlinux.org/mirrorlist/
     
     ## Brazil
