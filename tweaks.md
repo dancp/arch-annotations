@@ -1,3 +1,11 @@
+## Índice
+
+1. [Melhorias](#melhorias)
+
+- [Instalação](https://github.com/dancp/arch-anotations/blob/master/arch-install.md)
+- [Pós Instalação](https://github.com/dancp/arch-anotations/blob/master/arch-post-install.md)
+<br>
+
 ## Melhorias
 
 #### Arc Theme
@@ -174,15 +182,14 @@ Item {
     https://www.archlinux.org/mirrorlist/
     
     ## Brazil
-    #Server = http://br.mirror.archlinux-br.org/$repo/os/$arch             (23 ms)
-    #Server = http://linorg.usp.br/archlinux/$repo/os/$arch                (29 ms)
-    #Server = http://www.caco.ic.unicamp.br/archlinux/$repo/os/$arch       (31 ms)
-    #Server = https://www.caco.ic.unicamp.br/archlinux/$repo/os/$arch      (31 ms)
-    #Server = http://mirror.ufscar.br/archlinux/$repo/os/$arch             (34 ms)
-    #Server = http://archlinux.c3sl.ufpr.br/$repo/os/$arch                 (35 ms)
-    #Server = http://archlinux.pop-es.rnp.br/$repo/os/$arch                (35 ms)
-    #Server = http://pet.inf.ufsc.br/mirrors/archlinux/$repo/os/$arch      (41 ms)
-    #Server = http://mirror.ufam.edu.br/archlinux/$repo/os/$arch           (83 ms)
+    Server = http://br.mirror.archlinux-br.org/$repo/os/$arch             (23 ms)
+    Server = http://linorg.usp.br/archlinux/$repo/os/$arch                (29 ms)
+    Server = http://www.caco.ic.unicamp.br/archlinux/$repo/os/$arch       (31 ms)
+    Server = http://mirror.ufscar.br/archlinux/$repo/os/$arch             (34 ms)
+    Server = http://archlinux.c3sl.ufpr.br/$repo/os/$arch                 (35 ms)
+    Server = http://archlinux.pop-es.rnp.br/$repo/os/$arch                (35 ms)
+    Server = http://pet.inf.ufsc.br/mirrors/archlinux/$repo/os/$arch      (41 ms)
+    Server = http://mirror.ufam.edu.br/archlinux/$repo/os/$arch           (83 ms)
 <br>
 
 #### fstab
@@ -196,4 +203,3 @@ Item {
 
 - [Instalação](https://github.com/dancp/arch-anotations/blob/master/arch-install.md)
 - [Pós Instalação](https://github.com/dancp/arch-anotations/blob/master/arch-post-install.md)
-- [Melhorias](https://github.com/dancp/arch-annotations/blob/master/tweaks.md)
