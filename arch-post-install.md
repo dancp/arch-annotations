@@ -85,6 +85,7 @@
 
     # pacman -S xdg-user-dirs pacman-contrib jshon expac git wget networkmanager-openvpn
     # pacman -S gimp telegram-desktop wine qbittorrent firefox libreoffice latte-dock flameshot
+    # pacman -S audacity flatpak
 <br>
 
 #### Firewall
