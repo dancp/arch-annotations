@@ -1,21 +1,23 @@
-**Arc Theme**
+## Melhorias
+
+#### Arc Theme
  
     # pacman -S kvantum-qt5 arc-kde kvantum-theme-arc arc-gtk-theme papirus-icon-theme
 <br>
 
-**Zsh**
+#### Zsh
  
     # pacman -S zsh
     # chsh -l
     # chsh -s full-path-to-shell
 <br>
  
-**Oh My Zsh**
+#### Oh My Zsh
  
     # sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 <br>
 
-**Plugins**
+#### Plugins
 zsh-syntax-highlight zsh-autosuggestions
 
     git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
@@ -25,22 +27,24 @@ zsh-syntax-highlight zsh-autosuggestions
     source ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 <br>
 
-**Wallpapers**
+#### Wallpapers
   
     # ln -s $HOME/Pictures/Wallpapers $HOME/.local/share/wallpapers
 <br>
 
-**Relógio/Dual boot W10**
+#### Relógio/Dual boot W10
  
     # timedatectl set-local-rtc 1 --adjust-system-clock
 <br>
 
 #### Salvar configurações no alsamixer
+
     # sudo alsactl store
 
 <br>
 
-**Firefox**
+#### Firefox
+
 ```
   new string
     widget.content.gtk-theme-override
@@ -67,7 +71,7 @@ zsh-syntax-highlight zsh-autosuggestions
  ```
 <br>
 
-**KDE Plasma Volume Fix**
+#### KDE Plasma Volume Fix
 
     *modify* /usr/share/plasma/look-and-feel/org.kde.breeze.desktop/contents/osd/Osd.qml
 
@@ -163,7 +167,7 @@ Item {
 ```
 <br>
 
-**Arch mirrorlist**
+#### Arch mirrorlist
 
     https://www.archlinux.org/mirrorlist/
     
