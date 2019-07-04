@@ -18,7 +18,7 @@
 <br>
 
 #### Plugins
-zsh-syntax-highlight zsh-autosuggestions
+zsh-syntax-highlight & zsh-autosuggestions
 
     git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
     git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
@@ -172,15 +172,15 @@ Item {
     https://www.archlinux.org/mirrorlist/
     
     ## Brazil
-    #Server = http://br.mirror.archlinux-br.org/$repo/os/$arch
-    #Server = http://archlinux.c3sl.ufpr.br/$repo/os/$arch
-    #Server = http://www.caco.ic.unicamp.br/archlinux/$repo/os/$arch
-    #Server = https://www.caco.ic.unicamp.br/archlinux/$repo/os/$arch
-    #Server = http://linorg.usp.br/archlinux/$repo/os/$arch
-    #Server = http://pet.inf.ufsc.br/mirrors/archlinux/$repo/os/$arch
-    #Server = http://archlinux.pop-es.rnp.br/$repo/os/$arch
-    #Server = http://mirror.ufam.edu.br/archlinux/$repo/os/$arch
-    #Server = http://mirror.ufscar.br/archlinux/$repo/os/$arch
+    #Server = http://br.mirror.archlinux-br.org/$repo/os/$arch             (23 ms)
+    #Server = http://linorg.usp.br/archlinux/$repo/os/$arch                (29 ms)
+    #Server = http://www.caco.ic.unicamp.br/archlinux/$repo/os/$arch       (31 ms)
+    #Server = https://www.caco.ic.unicamp.br/archlinux/$repo/os/$arch      (31 ms)
+    #Server = http://mirror.ufscar.br/archlinux/$repo/os/$arch             (34 ms)
+    #Server = http://archlinux.c3sl.ufpr.br/$repo/os/$arch                 (35 ms)
+    #Server = http://archlinux.pop-es.rnp.br/$repo/os/$arch                (35 ms)
+    #Server = http://pet.inf.ufsc.br/mirrors/archlinux/$repo/os/$arch      (41 ms)
+    #Server = http://mirror.ufam.edu.br/archlinux/$repo/os/$arch           (83 ms)
 <br>
 
 #### fstab
