@@ -2,6 +2,17 @@
 
 1. [Melhorias](#melhorias)
    - [Arc Theme](#arc-theme)
+   - [Zsh](#zsh)
+   - [Oh My Zsh](#oh-my-zsh)
+   - [Zsh plugins](#zsh-plugins)
+   - [Cor no pacman](#cor-no-pacman)
+   - [Nano Syntax Highlighting](#nano-syntax-highlighting)
+   - [Pasta de Wallpapers](#pasta-de-wallpapers)
+   - [Relógio/Dual boot W10](#relógio-dual-boot-w10)
+   - [Firefox](#firefox)
+   - [KDE Plasma Volume Fix](#kde-plasma-volume-fix)
+   - [Arch mirrorlist](#arch-mirrorlist)
+   - [fstab](#fstab)
 
 - [Instalação](https://github.com/dancp/arch-anotations/blob/master/arch-install.md)
 - [Pós Instalação](https://github.com/dancp/arch-anotations/blob/master/arch-post-install.md)
@@ -26,7 +37,7 @@
     # sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 <br>
 
-#### Plugins
+#### Zsh plugins
 zsh-syntax-highlight & zsh-autosuggestions
 
     git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
