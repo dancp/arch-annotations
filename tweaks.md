@@ -9,6 +9,7 @@
    - [Nano Syntax Highlighting](#nano-syntax-highlighting)
    - [Pasta de Wallpapers](#pasta-de-wallpapers)
    - [Relógio/Dual boot W10](#relógio-dual-boot-w10)
+   - [Salvar configurações do alsamixer](#salvar-configurações-do-alsamixer)
    - [Firefox](#firefox)
    - [KDE Plasma Volume Fix](#kde-plasma-volume-fix)
    - [Arch mirrorlist](#arch-mirrorlist)
