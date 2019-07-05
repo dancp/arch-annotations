@@ -58,7 +58,7 @@
 
     # pacman -S plasma-desktop dolphin konsole
     # ark gwenview spectacle kate okular kcalc
-    # kde-gtk-config kinfocenter plasma-pa user-manager polkit-kde-agent
+    # kde-gtk-config kinfocenter plasma-pa user-manager polkit-kde-agent powerdevil
     # kdialog plasma-nm kwallet kwallet-pam kwalletmanager
     # kolourpaint kruler kget kdf kfind kdeconnect discover
 <br>
