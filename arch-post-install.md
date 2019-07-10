@@ -26,9 +26,14 @@
 
 ## Pós Instalação
 
-#### Iniciar conexão com a Internet
+#### Iniciar conexão com a Internet (cabo)
 
     # systemctl start dhcpcd
+<br>
+
+#### Iniciar conexão com a Internet (WiFi)
+
+    # wifi-menu
 <br>
 
 #### Habilitar suporte 32-bits
@@ -41,7 +46,7 @@
 
 #### Xorg
 
-    # pacman -S xorg
+    # pacman -S xorg xorg-xinit
 <br>
 
 #### Nvidia
@@ -52,6 +57,7 @@
 #### Intel
 
     # pacman -S mesa lib32-mesa xf86-video-intel vulkan-intel
+<br>
 
 #### Som
 
