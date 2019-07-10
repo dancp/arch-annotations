@@ -79,7 +79,7 @@
     # mkfs.ext4 /dev/sdX1
     
     # mkswap /dev/sdX2
-    # swapon /dev/sdX2
+
 <br>
 
 #### Formatar as partições (UEFI)
@@ -89,15 +89,24 @@
     # mkfs.ext4 /dev/sdX2
     
     # mkswap /dev/sdX3
-    # swapon /dev/sdX2
+
 <br>
 
 #### Montar partição (BIOS)
 
     # mount /dev/sdX1 /mnt
+    
+    # swapon /dev/sdX2
 <br>
 
 #### Montar partição (UEFI)
+
+    # mount /dev/sdX2 /mnt
+    
+    # mkdir /mnt/boot/efi
+    # mount /dev/sdX1 /mnt/boot/efi
+    
+    # swapon /dev/sdX3
 
 <br><br>
 
@@ -144,18 +153,18 @@
   
 #### Linguagem
 
-    # echo LANG=en_US.UTF-8 > /etc/locale.conf
+    # echo LANG=en_US.UTF-8 >> /etc/locale.conf
     # export LANG=en_US.UTF-8 
 <br>
 
 #### Layout do teclado
 
-    # echo KEYMAP=br-abnt2 > /etc/vconsole.conf
+    # echo KEYMAP=br-abnt2 >> /etc/vconsole.conf
 <br>
 
 #### Nome do computador
 
-    # echo meuhostname > /etc/hostname
+    # echo meuhostname >> /etc/hostname
     
     # nano /etc/hosts
     127.0.0.1   localhost.localdomain   localhost
@@ -180,12 +189,25 @@
     # sed -i '/%wheel ALL=(ALL) ALL/s/^#//' /etc/sudoers
 <br>
 
-#### Grub
+#### Grub (BIOS)
 
     # pacman -S grub os-prober intel-ucode ntfs-3g
     # grub-install --target=i386-pc /dev/sdX
     # grub-mkconfig -o /boot/grub/grub.cfg
 <br>
+
+#### Grub (BIOS)
+
+    # pacman -S grub efibootmgr os-prober intel-ucode ntfs-3g
+    # grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=grub --recheck
+    # grub-mkconfig -o /boot/grub/grub.cfg
+<br>
+
+#### Conexão Wifi
+
+    # pacman -S networkmanager wpa_supplicant iw
+    
+    # systemctl enable NetworkManager
 
 #### Reiniciar
 
