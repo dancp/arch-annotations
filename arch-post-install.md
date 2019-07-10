@@ -124,6 +124,8 @@ sudo ufw reload
   
     # pacman -S pulseeffects pavucontrol-qt
     # pacman -S --needed boost-libs glibmm gst-plugins-bad gst-plugins-good gstreamer gtk3 gtkmm3 libebur128 libpulse libsamplerate libsigc++ libsndfile lilv zita-convolver calf lsp-plugins mda.lv2 rubberband zam-plugins appstream-glib boost itstool meson
+    
+    add to startup > pulseeffects --gapplication-service &>/dev/null
 <br>
 
 #### Openssh
