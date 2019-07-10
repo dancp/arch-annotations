@@ -49,6 +49,10 @@
     # pacman -S nvidia-390xx nvidia-390xx-utils lib32-nvidia-390xx-utils nvidia-390xx-settings
 <br>
 
+#### Intel
+
+    # pacman -S mesa lib32-mesa xf86-video-intel vulkan-intel
+
 #### Som
 
     # pacman -S alsa-utils alsa-lib alsa-oss pulseaudio pulseaudio-alsa lib32-libpulse lib32-alsa-plugins
