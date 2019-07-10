@@ -37,6 +37,10 @@
     # localectl set-keymap br-abnt2
 <br>
 
+#### Obter conexão WiFi
+
+    # wifi-menu
+
 #### Atualizar o Relógio do Sistema
 
     # timedatectl set-ntp true
@@ -47,12 +51,30 @@
     # fdisk -l
 <br>
 
-#### Criar partições
+#### Criar partições (BIOS)
 
     # cfdisk
 <br>
 
-#### Formatar as partições
+#### Criar partições (UEFI)
+
+    # cgdisk
+<br>
+
+#### Estrutura de partições (BIOS)
+
+    # /dev/sdX1 (-GB)   /
+    # /dev/sdX2 (-GB)   swap
+<br>
+
+#### Estrutura de partições (UEFI)
+
+    # /dev/sdX1 (512MB) /boot/efi
+    # /dev/sdX2 (-GB)   /
+    # /dev/sdX3 (-GB)   swap
+<br>
+
+#### Formatar as partições (BIOS)
 
     # mkfs.ext4 /dev/sdX1
     
@@ -60,9 +82,22 @@
     # swapon /dev/sdX2
 <br>
 
-#### Montar os sistemas de arquivos
+#### Formatar as partições (UEFI)
+
+    # mkfs.fat -F32 /dev/sdX1
+    
+    # mkfs.ext4 /dev/sdX2
+    
+    # mkswap /dev/sdX3
+    # swapon /dev/sdX2
+<br>
+
+#### Montar partição (BIOS)
 
     # mount /dev/sdX1 /mnt
+<br>
+
+#### Montar partição (UEFI)
 
 <br><br>
 
