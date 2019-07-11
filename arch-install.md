@@ -52,7 +52,7 @@
 #### Atualizar o Relógio do Sistema
 
     # timedatectl set-ntp true
-<br>
+<br><br>
 
 ### Partições
 #### Listar discos e partições
