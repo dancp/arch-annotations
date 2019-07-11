@@ -204,12 +204,6 @@
     # grub-mkconfig -o /boot/grub/grub.cfg
 <br>
 
-#### Conexão Wifi
-
-    # pacman -S networkmanager wpa_supplicant iw
-    
-    # systemctl enable NetworkManager
-
 #### Reiniciar
 
     # exit
