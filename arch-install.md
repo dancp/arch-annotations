@@ -30,6 +30,8 @@
 
 ## Pre Instalação
 
+### Teclado, internet e relógio
+
 #### Configurar Layout do Teclado
 
     # loadkeys br-abnt2
@@ -40,74 +42,72 @@
 #### Obter conexão WiFi
 
     # wifi-menu
+<br>
+
+#### Obter conexão a cabo
+
+    # systemctl start dhcpcd
+<br>
 
 #### Atualizar o Relógio do Sistema
 
     # timedatectl set-ntp true
 <br>
 
-#### Listar discos
+### Partições
+#### Listar discos e partições
 
     # fdisk -l
 <br>
 
-#### Criar partições (BIOS)
+#### Criar partições
 
-    # cfdisk
-<br>
-
-#### Criar partições (UEFI)
-
-    # cgdisk
+    # cfdisk /dev/sdX
 <br>
 
 #### Estrutura de partições (BIOS)
 
     # /dev/sdX1 (-GB)   /
-    # /dev/sdX2 (-GB)   swap
-<br>
-
-#### Estrutura de partições (UEFI)
-
-    # /dev/sdX1 (512MB) /boot/efi
-    # /dev/sdX2 (-GB)   /
+    # /dev/sdX2 (-GB)   /home
     # /dev/sdX3 (-GB)   swap
 <br>
 
 #### Formatar as partições (BIOS)
 
     # mkfs.ext4 /dev/sdX1
-    
-    # mkswap /dev/sdX2
-
-<br>
-
-#### Formatar as partições (UEFI)
-
-    # mkfs.fat -F32 /dev/sdX1
-    
     # mkfs.ext4 /dev/sdX2
-    
     # mkswap /dev/sdX3
-
 <br>
 
 #### Montar partição (BIOS)
 
     # mount /dev/sdX1 /mnt
-    
-    # swapon /dev/sdX2
+    # mkdir -p /mnt/home && mount /dev/sda2 /mnt/home
+    # swapon /dev/sdX3
+<br>
+
+#### Estrutura de partições (UEFI)
+
+    # /dev/sdX1 (512MB) /boot/efi
+    # /dev/sdX2 (-GB)   /
+    # /dev/sdX3 (-GB)   /home
+    # /dev/sdX4 (-GB)   swap
+<br>
+
+#### Formatar as partições (UEFI)
+
+    # mkfs.fat -F32 /dev/sdX1
+    # mkfs.ext4 /dev/sdX2
+    # mkfs.ext4 /dev/sdX3
+    # mkswap /dev/sdX4
 <br>
 
 #### Montar partição (UEFI)
 
     # mount /dev/sdX2 /mnt
-    
-    # mkdir /mnt/boot/efi
-    # mount /dev/sdX1 /mnt/boot/efi
-    
+    # mkdir -p /mnt/home && mount /dev/sda2 /mnt/home
+    # mkdir -p /mnt/boot/efi && mount /dev/sda1 /mnt/boot/efi
     # swapon /dev/sdX3
-
 <br><br>
 
 ## Instalação
