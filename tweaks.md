@@ -225,6 +225,8 @@ Item {
 
 #### Mudar nome de partição
 
+    lsblk -o NAME,SIZE,LABEL
+
   ext2/3/4 (e2fsprogs)
   
     e2label /dev/sdXX new_label
