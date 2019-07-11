@@ -219,8 +219,31 @@ Item {
     # <file system> <dir> <type> <options> <dump> <pass>
     # UUID=fed816ab-65fd-4fbe-b4e0-c4443224cc7f
     /dev/sda4               /               ext4            rw,relatime     0 1
-    #UUID=62F90749644D8BBC
+    # UUID=62F90749644D8BBC
     /dev/sda3       /run/media/dancp/Files/ ntfs    defaults        0       0
+<br>
+
+#### Mudar nome de partição
+
+  ext2/3/4 (e2fsprogs)
+  
+    e2label /dev/sdXX new_label
+    
+  ntfs (ntfs-3g)
+  
+    ntfslabel /dev/sdXX new_label
+    
+  swap (util-linux)
+  
+    swaplabel -L new_label /dev/sdXX
+    
+  fat/vfat (dosfstools)
+  
+    fatlabel /dev/sdXX new_label
+    
+  btrfs (btrfs-progs)
+  
+    btrfs filesystem label /dev/sdXX new_label 
 <br>
 
 - [Instalação](https://github.com/dancp/arch-anotations/blob/master/arch-install.md)
