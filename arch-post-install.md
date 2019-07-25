@@ -96,7 +96,7 @@
 
     # pacman -S xdg-user-dirs pacman-contrib jshon expac git wget networkmanager-openvpn
     # pacman -S gimp telegram-desktop qbittorrent firefox libreoffice latte-dock flameshot
-    # pacman -S audacity flatpak unrar p7zip
+    # pacman -S audacity flatpak unrar p7zip sshfs
     
     # dosfstools mtools
 <br>
