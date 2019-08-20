@@ -68,7 +68,7 @@
 
     # pacman -S plasma dolphin konsole
     # ark gwenview kate okular
-    # spectacle kcalc kdeconnect kdialog kwalletmanager qt5-xmlpatterns kolourpaint kruler kdf kfind
+    # spectacle kcalc kdeconnect kdialog kwalletmanager qt5-xmlpatterns kolourpaint kruler kdf kfind appmenu-gtk-module
 <br>
 
 #### Display Manager
