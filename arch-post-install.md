@@ -83,7 +83,7 @@
     
     /etc/NetworkManager/conf.d/dhcp-client.conf
     [main]
-    dhcp=dhclient
+    dhcp=dhcpcd
     
     # systemctl enable NetworkManager.service
 <br><br>
