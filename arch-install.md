@@ -122,7 +122,7 @@
 
 #### Instalar os pacotes base
 
-    # pacstrap /mnt base base-devel
+    # pacstrap /mnt base base-devel linux linux-firmware
 
 <br><br>
 
@@ -130,7 +130,7 @@
 
 #### Fstab
 
-    # genfstab -p /mnt >> /mnt/etc/fstab
+    # genfstab -U /mnt >> /mnt/etc/fstab
 <br>
 
 #### Chroot
@@ -168,14 +168,14 @@
     # echo meuhostname >> /etc/hostname
     
     # nano /etc/hosts
-    127.0.0.1   localhost.localdomain   localhost
-    ::1         localhost.localdomain   localhost
+    127.0.0.1   localhost
+    ::1         localhost
     127.0.1.1   meuhostname.localdomain meuhostname
 <br>
 
 #### Initramfs
 
-    # mkinitcpio -p linux
+    # mkinitcpio -P
 <br>
 
 #### Senha do Root
@@ -197,7 +197,7 @@
     # grub-mkconfig -o /boot/grub/grub.cfg
 <br>
 
-#### Grub (BIOS)
+#### Grub (UEFI)
 
     # pacman -S grub efibootmgr os-prober intel-ucode ntfs-3g
     # grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=grub --recheck
