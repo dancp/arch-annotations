@@ -126,7 +126,7 @@ sudo ufw reload
 #### Codecs
 
     # pacman -S --needed a52dec faac faad2 flac jasper lame libdca libdv libmad libmpeg2 libtheora libvorbis libxv wavpack x264 xvidcore 
-    # pacman -S --needed opencl-nvidia390xx lib32-opencl-nvidia-390xx lib32-libvdpau libva-vdpau-driver mesa-vdpau lib32-mesa-vdpau
+    # pacman -S --needed opencl-nvidia-390xx lib32-opencl-nvidia-390xx lib32-libvdpau libva-vdpau-driver mesa-vdpau lib32-mesa-vdpau
     # pacman -S --needed gst-{plugins-{bad,ugly},libav} libdvdcss libquicktime mencoder x264 lib32-gst-plugins-{base,good}
 <br>
 
@@ -160,6 +160,8 @@ sudo ufw reload
  
     # pacman -S steam  lib32-libpulse lib32-libxtst libxfixes lib32-libxrandr lib32-glib2 lib32-gtk2 lib32-gdk-pixbuf2 lib32-openal
 <br>
+
+systemctl disable dhcpcd 
 
 - [Instalação](https://github.com/dancp/arch-anotations/blob/master/arch-install.md)
 - [Melhorias](https://github.com/dancp/arch-annotations/blob/master/tweaks.md)
