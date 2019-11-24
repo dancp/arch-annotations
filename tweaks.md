@@ -67,6 +67,14 @@ zsh-syntax-highlight & zsh-autosuggestions
     # timedatectl set-local-rtc 1 --adjust-system-clock
 <br>
 
+#### Pulse Effects Tweaks 
+
+    /etc/pulse/default.pa
+    load-module module-device-manager
+    
+    pulseeffects --gapplication-service &>/dev/null
+<br>
+
 #### Salvar configurações do alsamixer
 
     # sudo alsactl store
@@ -74,6 +82,11 @@ zsh-syntax-highlight & zsh-autosuggestions
 <br>
 
 #### Firefox
+```
+Right click the Firefox launcher in the app launcher > Edit Application
+Application tab > Command
+   GTK_USE_PORTAL=1 /usr/lib/firefox/firefox %u
+```
 
 ```
   new string
@@ -82,7 +95,8 @@ zsh-syntax-highlight & zsh-autosuggestions
 ```
     /home/dancp/.mozilla/firefox/???.default-release
     chrome/userChrome.css
-  
+    
+    toolkit.legacyUserProfileCustomizations.stylesheets  
 ```
 #PersonalToolbar
 {
