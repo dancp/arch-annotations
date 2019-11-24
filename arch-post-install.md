@@ -26,14 +26,8 @@
 
 ## Pós Instalação
 
-#### Iniciar conexão com a Internet (cabo)
-
-    # systemctl start dhcpcd
-<br>
-
-#### Iniciar conexão com a Internet (WiFi)
-
-    # wifi-menu
+#### Ordenar mirrors
+    # reflector -c Brazil --verbose --latest 5 --sort rate --save /etc/pacman.d/mirrorlist
 <br>
 
 #### Habilitar suporte 32-bits
@@ -67,8 +61,8 @@
 #### KDE Plasma
 
     # pacman -S plasma dolphin konsole
-    # ark gwenview kate okular
-    # spectacle kcalc kdeconnect kdialog kwalletmanager qt5-xmlpatterns kolourpaint kruler kdf kfind appmenu-gtk-module
+    # ark gwenview kate okular spectacle kdeconnect kwalletmanager
+    # kcalc kdialog qt5-xmlpatterns kolourpaint kruler kdf kfind appmenu-gtk-module
 <br>
 
 #### Display Manager
@@ -94,9 +88,13 @@
 
     # pacman -S xdg-user-dirs pacman-contrib jshon expac git wget networkmanager-openvpn
     # pacman -S gimp telegram-desktop qbittorrent firefox libreoffice latte-dock flameshot
-    # pacman -S audacity flatpak unrar p7zip sshfs
-    
-    # dosfstools mtools
+    # pacman -S audacity flatpak unrar p7zip sshfs dosfstools mtools
+<br>
+
+#### Openssh
+
+    # pacman -S openssh
+    # systemctl enable sshd.service
 <br>
 
 #### Firewall
@@ -138,19 +136,6 @@ sudo ufw reload
     add to startup > pulseeffects --gapplication-service &>/dev/null
 <br>
 
-#### Openssh
-
-    # pacman -S openssh
-    # systemctl enable sshd.service
-<br>
-
-#### Yay
- 
-    # git clone https://aur.archlinux.org/yay.git
-    # cd yay
-    # makepkg -si
-<br>
-
 #### Wine
 
     # pacman -S wine wine_gecko wine-mono winetricks
@@ -161,7 +146,9 @@ sudo ufw reload
     # pacman -S steam  lib32-libpulse lib32-libxtst libxfixes lib32-libxrandr lib32-glib2 lib32-gtk2 lib32-gdk-pixbuf2 lib32-openal
 <br>
 
-systemctl disable dhcpcd 
+#### Internet
+    # systemctl disable dhcpcd
+<br>
 
 - [Instalação](https://github.com/dancp/arch-anotations/blob/master/arch-install.md)
 - [Melhorias](https://github.com/dancp/arch-annotations/blob/master/tweaks.md)
