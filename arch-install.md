@@ -138,6 +138,11 @@
     # arch-chroot /mnt
 <br>
 
+#### Ferramentas 
+
+    # pacman -S dhcpcd nano sudo
+<br>
+
 #### Fuso horário
 
     # ln -sf /usr/share/zoneinfo/America/Sao_Paulo /etc/localtime
@@ -202,6 +207,11 @@
     # pacman -S grub efibootmgr os-prober intel-ucode ntfs-3g
     # grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=grub --recheck
     # grub-mkconfig -o /boot/grub/grub.cfg
+<br>
+
+#### Internet
+
+    # systemctl enable dhcpcd
 <br>
 
 #### Reiniciar
