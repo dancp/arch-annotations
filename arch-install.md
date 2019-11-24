@@ -140,7 +140,7 @@
 
 #### Ferramentas 
 
-    # pacman -S dhcpcd nano sudo
+    # pacman -S dhcpcd nano sudo reflector
 <br>
 
 #### Fuso horário
