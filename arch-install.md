@@ -197,14 +197,14 @@
 
 #### Grub (BIOS)
 
-    # pacman -S grub os-prober intel-ucode ntfs-3g
+    # pacman -S grub os-prober intel-ucode/amd-ucode ntfs-3g
     # grub-install --target=i386-pc /dev/sdX
     # grub-mkconfig -o /boot/grub/grub.cfg
 <br>
 
 #### Grub (UEFI)
 
-    # pacman -S grub efibootmgr os-prober intel-ucode ntfs-3g
+    # pacman -S grub efibootmgr os-prober intel-ucode/amd-ucode ntfs-3g
     # grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=grub --recheck
     # grub-mkconfig -o /boot/grub/grub.cfg
 <br>
