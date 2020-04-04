@@ -44,7 +44,7 @@
     # timedatectl set-ntp true
 <br>
 
-### Verificar o Modo de Inicialização
+#### Verificar o Modo de Inicialização
 
     # ls /sys/firmware/efi/efivars
 <br><br>
