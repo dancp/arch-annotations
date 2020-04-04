@@ -101,7 +101,7 @@
 
     # mount /dev/sdX2 /mnt
     # mkdir -p /mnt/home && mount /dev/sda2 /mnt/home
-    # mkdir -p /mnt/boot && mount /dev/sda1 /mnt/boot
+    # mkdir -p /mnt/efi && mount /dev/sda1 /mnt/efi
     # swapon /dev/sdX3
 <br><br>
 
