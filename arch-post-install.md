@@ -1,10 +1,11 @@
 ## Índice
 
 1. [Pós Instalação](#pós-instalação)
-    - [Iniciar conexão com a Internet](#iniciar-conexão-com-a-internet)
     - [Habilitar suporte 32-bits](#habilitar-suporte-32-bits)
     - [Xorg](#xorg)
     - [Nvidia](#nvidia)
+    - [AMD](#amd)
+    - [Intel](#intel)
     - [Som](#som)
     - [KDE Plasma](#kde-plasma)
     - [Display Manager](#display-manager)
@@ -26,9 +27,6 @@
 
 ## Pós Instalação
 
-#### Ordenar mirrors
-    # reflector -c Brazil --verbose --latest 5 --sort rate --save /etc/pacman.d/mirrorlist
-<br>
 
 #### Habilitar suporte 32-bits
 
@@ -46,6 +44,11 @@
 #### Nvidia
 
     # pacman -S nvidia-390xx nvidia-390xx-utils lib32-nvidia-390xx-utils nvidia-390xx-settings
+<br>
+
+#### AMD
+
+    # pacman -S mesa lib32-mesa xf86-video-amdgpu vulkan-radeon lib32-vulkan-radeon libva-mesa-driver lib32-libva-mesa-driver mesa-vdpau lib32-mesa-vdpau
 <br>
 
 #### Intel
@@ -86,7 +89,7 @@
 
 #### Geral
 
-    # pacman -S xdg-user-dirs pacman-contrib jshon expac git wget networkmanager-openvpn
+    # pacman -S base-devel xdg-user-dirs pacman-contrib jshon expac git wget networkmanager-openvpn
     # pacman -S gimp telegram-desktop qbittorrent firefox libreoffice latte-dock flameshot
     # pacman -S audacity flatpak unrar p7zip sshfs dosfstools mtools
 <br>
