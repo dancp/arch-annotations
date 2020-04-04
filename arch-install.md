@@ -116,7 +116,7 @@
 
 #### Instalar os pacotes base
 
-    # pacstrap /mnt base base-devel linux linux-firmware
+    # pacstrap /mnt base linux linux-firmware
 
 <br><br>
 
@@ -134,7 +134,7 @@
 
 #### Ferramentas 
 
-    # pacman -S dhcpcd nano sudo reflector
+    # pacman -S dhcpcd nano sudo
 <br>
 
 #### Fuso horário
