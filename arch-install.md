@@ -3,10 +3,9 @@
 1. [Pre Instalação](#pre-instalação)
     - [Configurar Layout do Teclado](#configurar-layout-do-teclado)
     - [Atualizar o Relógio do Sistema](#atualizar-o-relógio-do-sistema)
-    - [Listar discos](#listar-discos)
-    - [Criar partições](#criar-partições)
-    - [Formatar as partições](#formatar-as-partições)
-    - [Montar os sistemas de arquivos](#montar-os-sistemas-de-arquivos)
+    - [Verificar o Modo de Inicialização](#verificar-o-modo-de-inicializacao)
+    - [Partição BIOS](#estrutura-de-particoes-(BIOS))
+    - [Partição UEFI](#estrutura-de-particoes-(UEFI))
 2. [Instalação](#instalação)
     - [Mirrors](#mirrors)
     - [Instalar os pacotes base](#instalar-os-pacotes-base)
@@ -31,7 +30,7 @@
 ## Pre Instalação
 <br>
 
-### Teclado, internet e relógio
+### Pré Configurações
 
 #### Configurar Layout do Teclado
 
@@ -40,19 +39,14 @@
     # localectl set-keymap br-abnt2
 <br>
 
-#### Obter conexão WiFi
-
-    # wifi-menu
-<br>
-
-#### Obter conexão a cabo
-
-    # systemctl start dhcpcd
-<br>
-
 #### Atualizar o Relógio do Sistema
 
     # timedatectl set-ntp true
+<br>
+
+### Verificar o Modo de Inicialização
+
+    # ls /sys/firmware/efi/efivars
 <br><br>
 
 ### Partições
