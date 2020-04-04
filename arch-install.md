@@ -20,7 +20,8 @@
     - [Initramfs](#initramfs)
     - [Senha do Root](#senha-do-root)
     - [Criar usuário](#criar-usuário)
-    - [Grub](#grub)
+    - [Grub BIOS](#grub-bios)
+    - [Grub UEFI](#grub-uefi)
     - [Reiniciar](#reiniciar)
 
 - [Pós Instalação](https://github.com/dancp/arch-anotations/blob/master/arch-post-install.md)
@@ -153,18 +154,20 @@
   
 #### Linguagem
 
-    # echo LANG=en_US.UTF-8 >> /etc/locale.conf
-    # export LANG=en_US.UTF-8 
+    # nano /etc/locale.conf
+    # LANG=en_US.UTF-8 
 <br>
 
 #### Layout do teclado
 
-    # echo KEYMAP=br-abnt2 >> /etc/vconsole.conf
+    # nano /etc/vconsole.conf
+    # KEYMAP=br-abnt2
 <br>
 
 #### Nome do computador
 
-    # echo meuhostname >> /etc/hostname
+    # nano /etc/hostname
+    # hostname
     
     # nano /etc/hosts
     127.0.0.1   localhost
