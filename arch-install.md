@@ -4,8 +4,8 @@
     - [Configurar Layout do Teclado](#configurar-layout-do-teclado)
     - [Atualizar o Relógio do Sistema](#atualizar-o-relógio-do-sistema)
     - [Verificar o Modo de Inicialização](#verificar-o-modo-de-inicializacao)
-    - [Partição BIOS](#estrutura-de-partições-bios)
-    - [Partição UEFI](#estrutura-de-partições-uefi)
+    - [Partições BIOS](#estrutura-de-partições-bios)
+    - [Partições UEFI](#estrutura-de-partições-uefi)
 2. [Instalação](#instalação)
     - [Mirrors](#mirrors)
     - [Instalar os pacotes base](#instalar-os-pacotes-base)
@@ -101,7 +101,7 @@
 
     # mount /dev/sdX2 /mnt
     # mkdir -p /mnt/home && mount /dev/sda2 /mnt/home
-    # mkdir -p /mnt/boot/efi && mount /dev/sda1 /mnt/boot/efi
+    # mkdir -p /mnt/boot && mount /dev/sda1 /mnt/boot
     # swapon /dev/sdX3
 <br><br>
 
