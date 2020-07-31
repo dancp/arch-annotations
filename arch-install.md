@@ -174,7 +174,7 @@
 
 #### Criar usuário
 
-    # useradd -m -G log,sys,wheel,rfkill,dbus -s /bin/bash nomedousuario
+    # useradd -m -G dbus,log,lp,rfkill,sys,wheel -s /bin/bash nomedousuario
     # passwd nomedousuario
     # sed -i '/%wheel ALL=(ALL) ALL/s/^#//' /etc/sudoers
 <br>
