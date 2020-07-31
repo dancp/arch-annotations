@@ -151,11 +151,11 @@
 #### Nome do computador
 
     # nano /etc/hostname
-    # hostname
+    # nomedamaquina
     
     # nano /etc/hosts
     127.0.0.1  localhost
-    127.0.1.1  myhostname
+    127.0.1.1  nomedamaquina
     ::1        localhost ip6-localhost ip6-loopback
     ff02::1    ip6-allnodes
     ff02::2    ip6-allrouters
@@ -174,8 +174,8 @@
 
 #### Criar usuário
 
-    # useradd -m -g users -G log,sys,wheel,rfkill,dbus -s /bin/bash usuario
-    # passwd usuario
+    # useradd -m -G log,sys,wheel,rfkill,dbus -s /bin/bash nomedousuario
+    # passwd nomedousuario
     # sed -i '/%wheel ALL=(ALL) ALL/s/^#//' /etc/sudoers
 <br>
 
