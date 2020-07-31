@@ -84,9 +84,7 @@
 
 #### Mirrors
 
-    > /etc/pacman.d/mirrorlist
-    # sed "s/^Ser/#Ser/" /etc/pacman.d/mirrorlist > /tmp/mirrors
-    # sed '/Brazil/{n;s/^#//}' /tmp/mirrors > /etc/pacman.d/mirrorlist
+    # reflector --country Brazil --age 12 --sort rate --save /etc/pacman.d/mirrorlist
 <br>
 
 #### Instalar os pacotes base
