@@ -1,11 +1,12 @@
 ## Índice
 
 1. [Pre Instalação](#pre-instalação)
-    - [Configurar Layout do Teclado](#configurar-layout-do-teclado)
-    - [Atualizar o Relógio do Sistema](#atualizar-o-relógio-do-sistema)
-    - [Verificar o Modo de Inicialização](#verificar-o-modo-de-inicializacao)
-    - [Partições BIOS](#estrutura-de-partições-bios)
-    - [Partições UEFI](#estrutura-de-partições-uefi)
+    - [Configurar layout do teclado](#configurar-layout-do-teclado)
+    - [Atualizar o relógio do sistema](#atualizar-o-relógio-do-sistema)
+    - [Criar partições](#criar-partições)
+    - [Estrutura de partições](#estrutura-de-partições)
+    - [Formatar partições](#formatar-partições)
+    - [Montar partições](#montar-partições)
 2. [Instalação](#instalação)
     - [Mirrors](#mirrors)
     - [Instalar os pacotes base](#instalar-os-pacotes-base)
@@ -20,8 +21,7 @@
     - [Initramfs](#initramfs)
     - [Senha do Root](#senha-do-root)
     - [Criar usuário](#criar-usuário)
-    - [Grub BIOS](#grub-bios)
-    - [Grub UEFI](#grub-uefi)
+    - [Grub](#grub)
     - [Reiniciar](#reiniciar)
 
 - [Pós Instalação](https://github.com/dancp/arch-anotations/blob/master/arch-post-install.md)
@@ -33,14 +33,14 @@
 
 ### Pré Configurações
 
-#### Configurar Layout do Teclado
+#### Configurar layout do teclado
 
     # loadkeys br-abnt2
     ou
     # localectl set-keymap br-abnt2
 <br>
 
-#### Atualizar o Relógio do Sistema
+#### Atualizar o relógio do sistema
 
     # timedatectl set-ntp true
 <br><br>
@@ -64,7 +64,7 @@
     # /dev/sdX4 (-GB)   swap
 <br>
 
-#### Formatar as partições
+#### Formatar partições
 
     # mkfs.fat -F32 /dev/sdX1
     # mkfs.ext4 /dev/sdX2
@@ -72,7 +72,7 @@
     # mkswap /dev/sdX4
 <br>
 
-#### Montar partição
+#### Montar partições
 
     # mount /dev/sdX2 /mnt
     # mkdir -p /mnt/home && mount /dev/sda2 /mnt/home
