@@ -146,6 +146,8 @@
 
     # nano /etc/vconsole.conf
     # KEYMAP=br-abnt2
+    # FONT=
+    # FONT_MAP=
 <br>
 
 #### Nome do computador
@@ -154,9 +156,12 @@
     # hostname
     
     # nano /etc/hosts
-    127.0.0.1   localhost
-    ::1         localhost
-    127.0.1.1   meuhostname.localdomain meuhostname
+    127.0.0.1  localhost
+    127.0.1.1  myhostname
+    ::1        localhost ip6-localhost ip6-loopback
+    ff02::1    ip6-allnodes
+    ff02::2    ip6-allrouters
+
 <br>
 
 #### Initramfs
@@ -176,16 +181,9 @@
     # sed -i '/%wheel ALL=(ALL) ALL/s/^#//' /etc/sudoers
 <br>
 
-#### Grub (BIOS)
+#### Grub
 
-    # pacman -S grub os-prober intel-ucode/amd-ucode ntfs-3g
-    # grub-install --target=i386-pc /dev/sdX
-    # grub-mkconfig -o /boot/grub/grub.cfg
-<br>
-
-#### Grub (UEFI)
-
-    # pacman -S grub efibootmgr os-prober intel-ucode/amd-ucode ntfs-3g
+    # pacman -S grub efibootmgr os-prober amd-ucode ntfs-3g
     # grub-install --target=x86_64-efi --efi-directory=/efi --bootloader-id=GRUB
     # grub-mkconfig -o /boot/grub/grub.cfg
 <br>
