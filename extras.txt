@@ -37,7 +37,6 @@ fsarchiver
 ghostscript
 gimp
 git
-gksu
 gnu-netcat
 gparted
 gpm
@@ -83,7 +82,7 @@ mtools
 mtpfs
 nano
 ndisc6
-neofetch 
+neofetch
 netctl
 networkmanager-openconnect
 networkmanager-openvpn
