@@ -43,11 +43,6 @@
 #### Atualizar o Relógio do Sistema
 
     # timedatectl set-ntp true
-<br>
-
-#### Verificar o Modo de Inicialização
-
-    # ls /sys/firmware/efi/efivars
 <br><br>
 
 ### Partições
@@ -61,28 +56,7 @@
     # cfdisk /dev/sdX
 <br>
 
-#### Estrutura de partições (BIOS)
-
-    # /dev/sdX1 (-GB)   /
-    # /dev/sdX2 (-GB)   /home
-    # /dev/sdX3 (-GB)   swap
-<br>
-
-#### Formatar as partições (BIOS)
-
-    # mkfs.ext4 /dev/sdX1
-    # mkfs.ext4 /dev/sdX2
-    # mkswap /dev/sdX3
-<br>
-
-#### Montar partição (BIOS)
-
-    # mount /dev/sdX1 /mnt
-    # mkdir -p /mnt/home && mount /dev/sda2 /mnt/home
-    # swapon /dev/sdX3
-<br>
-
-#### Estrutura de partições (UEFI)
+#### Estrutura de partições
 
     # /dev/sdX1 (512MB) /boot/efi
     # /dev/sdX2 (-GB)   /
@@ -90,7 +64,7 @@
     # /dev/sdX4 (-GB)   swap
 <br>
 
-#### Formatar as partições (UEFI)
+#### Formatar as partições
 
     # mkfs.fat -F32 /dev/sdX1
     # mkfs.ext4 /dev/sdX2
@@ -98,7 +72,7 @@
     # mkswap /dev/sdX4
 <br>
 
-#### Montar partição (UEFI)
+#### Montar partição
 
     # mount /dev/sdX2 /mnt
     # mkdir -p /mnt/home && mount /dev/sda2 /mnt/home
@@ -155,7 +129,17 @@
 #### Linguagem
 
     # nano /etc/locale.conf
-    # LANG=en_US.UTF-8 
+    # LANG=en_US.UTF-8
+    # LC_ADDRESS=pt_BR.UTF-8
+    # LC_IDENTIFICATION=pt_BR.UTF-8
+    # LC_MEASUREMENT=pt_BR.UTF-8
+    # LC_MONETARY=pt_BR.UTF-8
+    # LC_NAME=pt_BR.UTF-8
+    # LC_NUMERIC=pt_BR.UTF-8
+    # LC_PAPER=pt_BR.UTF-8
+    # LC_TELEPHONE=pt_BR.UTF-8
+    # LC_TIME=pt_BR.UTF-8
+
 <br>
 
 #### Layout do teclado
