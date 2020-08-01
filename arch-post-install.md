@@ -44,14 +44,11 @@
 
 #### Display Manager
 
-    # pacman -S sddm sddm-kcm
     # systemctl enable sddm.service
 <br>
 
 #### Network Manager
 
-    # pacman -S dhclient
-    
     /etc/NetworkManager/conf.d/dhcp-client.conf
     [main]
     dhcp=dhcpcd
@@ -63,7 +60,6 @@
 
 #### Openssh
 
-    # pacman -S openssh
     # systemctl enable sshd.service
 <br>
 
@@ -83,12 +79,6 @@ sudo ufw allow 1714:1764/udp
 sudo ufw allow 1714:1764/tcp
 sudo ufw reload
 ```
-<br>
-
-#### Pulse Effects
-  
-    # pacman -S pulseeffects pavucontrol-qt
-    # pacman -S --needed boost-libs glibmm gst-plugins-bad gst-plugins-good gstreamer gtk3 gtkmm3 libebur128 libpulse libsamplerate libsigc++ libsndfile lilv zita-convolver calf lsp-plugins mda.lv2 rubberband zam-plugins appstream-glib boost itstool meson
 <br>
 
 #### Internet
