@@ -66,7 +66,11 @@
 #### Salvar configurações do alsamixer
 
     # sudo alsactl store
+<br>
 
+#### Firefox
+    # userChrome - toolkit.legacyUserProfileCustomizations.stylesheets
+    # Poacket - extensions.pocket.enabled
 <br>
 
 #### Polkit
