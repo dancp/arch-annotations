@@ -36,38 +36,6 @@
     Include = /etc/pacman.d/mirrorlist
 <br>
 
-#### Xorg
-
-    # pacman -S xorg xorg-xinit
-<br>
-
-#### Nvidia
-
-    # pacman -S nvidia-390xx nvidia-390xx-utils lib32-nvidia-390xx-utils nvidia-390xx-settings
-<br>
-
-#### AMD
-
-    # pacman -S mesa lib32-mesa xf86-video-amdgpu vulkan-radeon lib32-vulkan-radeon libva-mesa-driver lib32-libva-mesa-driver mesa-vdpau lib32-mesa-vdpau
-<br>
-
-#### Intel
-
-    # pacman -S mesa lib32-mesa xf86-video-intel vulkan-intel
-<br>
-
-#### Som
-
-    # pacman -S alsa-utils alsa-lib alsa-oss pulseaudio pulseaudio-alsa lib32-libpulse lib32-alsa-plugins
-<br>
-
-#### KDE Plasma
-
-    # pacman -S plasma dolphin konsole
-    # ark gwenview kate okular spectacle kdeconnect kwalletmanager
-    # kcalc kdialog qt5-xmlpatterns kolourpaint kruler kdf kfind appmenu-gtk-module
-<br>
-
 #### Display Manager
 
     # pacman -S sddm sddm-kcm
@@ -86,13 +54,6 @@
 <br><br>
 
 ## Extras
-
-#### Geral
-
-    # pacman -S base-devel xdg-user-dirs pacman-contrib jshon expac git wget networkmanager-openvpn
-    # pacman -S gimp telegram-desktop qbittorrent firefox libreoffice latte-dock flameshot
-    # pacman -S audacity flatpak unrar p7zip sshfs dosfstools mtools
-<br>
 
 #### Openssh
 
@@ -118,33 +79,10 @@ sudo ufw reload
 ```
 <br>
 
-#### Fonts
- 
-    # pacman -S noto-fonts ttf-ubuntu-font-family ttf-dejavu ttf-freefont ttf-liberation ttf-droid ttf-inconsolata ttf-roboto terminus-font ttf-font-awesome
-    # pacman -S --needed ttf-{croscore,roboto,ubuntu-font-family} wqy-zenhei otf-{font-awesome,fira-sans,fira-code}
-<br>
-
-#### Codecs
-
-    # pacman -S --needed a52dec faac faad2 flac jasper lame libdca libdv libmad libmpeg2 libtheora libvorbis libxv wavpack x264 xvidcore 
-    # pacman -S --needed opencl-nvidia-390xx lib32-opencl-nvidia-390xx lib32-libvdpau libva-vdpau-driver mesa-vdpau lib32-mesa-vdpau
-    # pacman -S --needed gst-{plugins-{bad,ugly},libav} libdvdcss libquicktime mencoder x264 lib32-gst-plugins-{base,good}
-<br>
-
 #### Pulse Effects
   
     # pacman -S pulseeffects pavucontrol-qt
     # pacman -S --needed boost-libs glibmm gst-plugins-bad gst-plugins-good gstreamer gtk3 gtkmm3 libebur128 libpulse libsamplerate libsigc++ libsndfile lilv zita-convolver calf lsp-plugins mda.lv2 rubberband zam-plugins appstream-glib boost itstool meson
-<br>
-
-#### Wine
-
-    # pacman -S wine wine_gecko wine-mono winetricks
-<br>
-
-#### Steam
- 
-    # pacman -S steam  lib32-libpulse lib32-libxtst libxfixes lib32-libxrandr lib32-glib2 lib32-gtk2 lib32-gdk-pixbuf2 lib32-openal
 <br>
 
 #### Internet
