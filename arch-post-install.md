@@ -28,6 +28,12 @@
 ## Pós Instalação
 
 
+#### Packages
+
+    # git clone https://github.com/dancp/arch-annotations.git
+    # pacman -S --needed - < pkglist.txt
+<br>
+
 #### Habilitar suporte 32-bits
 
     # nano /etc/pacman.conf
