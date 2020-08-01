@@ -17,7 +17,7 @@
 
 #### Habilitar suporte 32-bits
 
-    # nano /etc/pacman.conf
+    # sudo nano /etc/pacman.conf
     
     [multilib]
     Include = /etc/pacman.d/mirrorlist
@@ -33,24 +33,24 @@
 
 #### Display Manager
 
-    # systemctl enable sddm.service
+    # sudo systemctl enable sddm.service
 <br>
 
 #### Network Manager
 
-    # systemctl enable NetworkManager.service
+    # sudo systemctl enable NetworkManager.service
 <br>
 
 #### Openssh
 
-    # systemctl enable sshd.service
+    # sudo systemctl enable sshd.service
 <br>
 
 #### Firewall
  
-    # pacman -S gufw
-    # ufw enable
-    # systemctl enable ufw.service
+    # sudo pacman -S gufw
+    # sudo ufw enable
+    # sudo systemctl enable ufw.service
 ```    
 # ufw default deny
 # ufw allow from 192.168.0.0/24
@@ -65,7 +65,7 @@ sudo ufw reload
 <br>
 
 #### Internet
-    # systemctl disable dhcpcd
+    # sudo systemctl disable dhcpcd
 <br>
 
 - [Instalação](https://github.com/dancp/arch-anotations/blob/master/arch-install.md)
