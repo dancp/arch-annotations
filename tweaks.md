@@ -69,38 +69,9 @@
 
 <br>
 
-#### Firefox
-```
-Right click the Firefox launcher in the app launcher > Edit Application
-Application tab > Command
-   GTK_USE_PORTAL=1 /usr/lib/firefox/firefox %u
-```
-
-```
-  new string
-    widget.content.gtk-theme-override
-  value=Arc
-```
-    /home/dancp/.mozilla/firefox/???.default-release
-    chrome/userChrome.css
-    
-    toolkit.legacyUserProfileCustomizations.stylesheets  
-```
-#PersonalToolbar
-{
-    opacity:0 !important;
-    margin-top: -23px !important;
-    transition: all 0.4s ease 0s !important;
-    }
-
-#navigator-toolbox:hover > #PersonalToolbar
-{
-    visibility: visible !important;
-    margin-top: 0px !important;
-    transition: all 0.4s ease 0s !important;
-    opacity: 1 !important;
-    }
- ```
+#### Polkit
+    # /etc/polkit-1/rules.d/
+    # https://gist.github.com/Scrumplex/8f528c1f63b5f4bfabe14b0804adaba7
 <br>
 
 #### Mudar nome de partição
