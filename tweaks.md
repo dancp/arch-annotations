@@ -62,12 +62,19 @@
     # sudo alsactl store
 <br>
 
+#### Kate
+
+    # --startanon
+<br>
+
 #### Firefox
+
     # userChrome - toolkit.legacyUserProfileCustomizations.stylesheets
-    # Poacket - extensions.pocket.enabled
+    # Pocket - extensions.pocket.enabled
 <br>
 
 #### Polkit
+
     # /etc/polkit-1/rules.d/99-arch.rules
 ```
     polkit.addRule(function(action, subject) {
