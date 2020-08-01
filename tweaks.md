@@ -21,43 +21,31 @@
 
 ## Melhorias
 
-#### Arc Theme
- 
-    # pacman -S kvantum-qt5 arc-kde kvantum-theme-arc arc-gtk-theme papirus-icon-theme
-<br>
-
-#### Zsh
- 
-    # pacman -S zsh
-    # chsh -l
-    # chsh -s full-path-to-shell
-<br>
- 
 #### Oh My Zsh
  
-    # sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+    # sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 <br>
 
 #### Zsh plugins
-zsh-syntax-highlight & zsh-autosuggestions
 
-    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-    git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+    # git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+    # git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
     source ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
     source ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 <br>
 
-#### Cor no pacman
-    Color
-    # /etc/pacman.conf
+#### Configurações do pacman
+
+    # sudo nano /etc/pacman.conf
 <br>
 
 #### Nano Syntax Highlighting
+
     # curl https://raw.githubusercontent.com/scopatz/nanorc/master/install.sh | sh
 <br>
 
-#### Pasta de Wallpapers
+#### Linkar pasta de Wallpapers
   
     # ln -s $HOME/Pictures/Wallpapers $HOME/.local/share/wallpapers
 <br>
@@ -67,10 +55,10 @@ zsh-syntax-highlight & zsh-autosuggestions
     # timedatectl set-local-rtc 1 --adjust-system-clock
 <br>
 
-#### Pulse Effects Tweaks 
+#### Habilitar modo no pavucontrol 
 
-    /etc/pulse/default.pa
-    load-module module-device-manager
+    # sudo nano /etc/pulse/default.pa
+    # load-module module-device-manager
     
     pulseeffects --gapplication-service &>/dev/null
 <br>
