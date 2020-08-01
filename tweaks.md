@@ -74,8 +74,15 @@
 <br>
 
 #### Polkit
-    # /etc/polkit-1/rules.d/
-    # https://gist.github.com/Scrumplex/8f528c1f63b5f4bfabe14b0804adaba7
+    # /etc/polkit-1/rules.d/99-arch.rules
+```
+    polkit.addRule(function(action, subject) {
+		if (action.id.indexOf("org.freedesktop.udisks2.") == 0 && subject.isInGroup("storage")) {
+			return polkit.Result.YES;
+		}
+	}
+);
+```
 <br>
 
 #### Mudar nome de partição
