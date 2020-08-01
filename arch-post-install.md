@@ -2,24 +2,12 @@
 
 1. [Pós Instalação](#pós-instalação)
     - [Habilitar suporte 32-bits](#habilitar-suporte-32-bits)
-    - [Xorg](#xorg)
-    - [Nvidia](#nvidia)
-    - [AMD](#amd)
-    - [Intel](#intel)
-    - [Som](#som)
-    - [KDE Plasma](#kde-plasma)
+    - [Packages](#packages)
     - [Display Manager](#display-manager)
     - [Network Manager](#network-manager)
-2. [Extras](#extras)
-    - [Geral](#geral)
-    - [Firewall](#firewall)
-    - [Fonts](#fonts)
-    - [Codecs](#codecs)
-    - [Pulse Effects](#pulse-effects)
     - [Openssh](#openssh)
+    - [Firewall](#firewall)
     - [Yay](#yay)
-    - [Wine](#wine)
-    - [Steam](#steam)
     
 - [Instalação](https://github.com/dancp/arch-anotations/blob/master/arch-install.md)
 - [Melhorias](https://github.com/dancp/arch-annotations/blob/master/tweaks.md)
@@ -27,19 +15,20 @@
 
 ## Pós Instalação
 
-
-#### Packages
-
-    # git clone https://github.com/dancp/arch-annotations.git
-    # pacman -S --needed - < pkglist.txt
-<br>
-
 #### Habilitar suporte 32-bits
 
     # nano /etc/pacman.conf
     
     [multilib]
     Include = /etc/pacman.d/mirrorlist
+    
+    # sudo pacman -Sy
+<br>
+
+#### Packages
+
+    # git clone https://github.com/dancp/arch-annotations.git
+    # sudo pacman -S --needed - < pkglist.txt
 <br>
 
 #### Display Manager
@@ -49,14 +38,8 @@
 
 #### Network Manager
 
-    /etc/NetworkManager/conf.d/dhcp-client.conf
-    [main]
-    dhcp=dhcpcd
-    
     # systemctl enable NetworkManager.service
-<br><br>
-
-## Extras
+<br>
 
 #### Openssh
 
