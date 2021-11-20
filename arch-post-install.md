@@ -40,7 +40,19 @@
 
 #### Som
 
-    # sudo pacman -S --needed pipewire lib32-pipewire pipewire-alsa pipewire-pulse
+    # sudo pacman -S --needed alsa-plugins pipewire lib32-pipewire pipewire-alsa pipewire-pulse lib32-libpulse easyeffects
+<br>
+
+#### Codecs
+
+    # sudo pacman -S --needed ffmpeg gst-libav gst-plugins-good gst-plugins-ugly gst-plugins-bad flac wavpack celt lame a52dec libdca libmad libmpcdec opencore-amr opus speex libvorbis faac faad2 libfdk-aac
+    # sudo pacman -S --needed jasper libwebp libavif libheif
+    # sudo pacman -S --needed aom dav1d rav1e svt-av1 libde265 libdv libmpeg2 schroedinger libtheora x264 x265 xvidcore
+<br>
+
+#### Fonts
+
+    # sudo pacman -S --needed noto-fonts noto-fonts-emoji noto-fonts-cjk awesome-terminal-fonts tex-gyre-fonts gnu-free-fonts dina-font tamsyn-font terminus-font cantarell-fonts inter-font bdf-unifont adobe-source-code-pro-fonts adobe-source-sans-fonts gentium-plus-font ttf-bitstream-vera ttf-croscore ttf-dejavu ttf-droid ttf-ibm-plex ttf-liberation ttf-linux-libertine ttf-roboto ttf-ubuntu-font-family ttf-anonymous-pro ttf-cascadia-code ttf-fantasque-sans-mono otf-fantasque-sans-mono ttf-fira-mono otf-fira-mono otf-fira-sans ttf-fira-code ttf-hack otf-hermit ttf-inconsolata ttc-iosevka ttf-jetbrains-mono ttf-monofur ttf-opensans ttf-junicode ttf-joypixels ttf-caladea ttf-carlito ttf-cormorant ttf-eurof ttf-font-awesome ttf-freefont ttf-indic-otf ttf-lato ttf-proggy-clean
 <br>
 
 #### Display Manager
