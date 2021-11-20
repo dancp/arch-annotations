@@ -33,9 +33,14 @@
 
 #### Interface Gráfica
 
-    # sudo pacman -S xorg
+    # sudo pacman -S xorg xorg-xinit
     # sudo pacman -S --needed xf86-video-amdgpu mesa lib32-mesa mesa-vdpau lib32-mesa-vdpau libva-mesa-driver lib32-libva-mesa-driver libva-vdpau-driver lib32-libva-vdpau-driver vulkan-radeon lib32-vulkan-radeon vkd3d lib32-vkd3d
     # sudo pacman -S --needed plasma
+<br>
+
+#### Som
+
+    # sudo pacman -S --needed pipewire lib32-pipewire pipewire-alsa pipewire-pulse
 <br>
 
 #### Display Manager
