@@ -31,6 +31,13 @@
     # sudo pacman -S --needed - < pkglist.txt
 <br>
 
+#### Interface Gráfica
+
+    # sudo pacman -S xorg
+    # sudo pacman -S --needed xf86-video-amdgpu mesa lib32-mesa mesa-vdpau lib32-mesa-vdpau libva-mesa-driver lib32-libva-mesa-driver libva-vdpau-driver lib32-libva-vdpau-driver vulkan-radeon lib32-vulkan-radeon vkd3d lib32-vkd3d
+    # sudo pacman -S --needed plasma
+<br>
+
 #### Display Manager
 
     # sudo systemctl enable sddm.service
