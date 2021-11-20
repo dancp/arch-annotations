@@ -31,6 +31,11 @@
     # sudo pacman -S --needed - < pkglist.txt
 <br>
 
+#### Pré
+
+    # sudo pacman -S --needed git openssh zsh unzip unrar wget base-devel ufw
+<br>
+
 #### Interface Gráfica
 
     # sudo pacman -S xorg xorg-xinit
@@ -53,6 +58,11 @@
 #### Fonts
 
     # sudo pacman -S --needed noto-fonts noto-fonts-emoji noto-fonts-cjk awesome-terminal-fonts tex-gyre-fonts gnu-free-fonts dina-font tamsyn-font terminus-font cantarell-fonts inter-font bdf-unifont adobe-source-code-pro-fonts adobe-source-sans-fonts gentium-plus-font ttf-bitstream-vera ttf-croscore ttf-dejavu ttf-droid ttf-ibm-plex ttf-liberation ttf-linux-libertine ttf-roboto ttf-ubuntu-font-family ttf-anonymous-pro ttf-cascadia-code ttf-fantasque-sans-mono otf-fantasque-sans-mono ttf-fira-mono otf-fira-mono otf-fira-sans ttf-fira-code ttf-hack otf-hermit ttf-inconsolata ttc-iosevka ttf-jetbrains-mono ttf-monofur ttf-opensans ttf-junicode ttf-joypixels ttf-caladea ttf-carlito ttf-cormorant ttf-eurof ttf-font-awesome ttf-freefont ttf-indic-otf ttf-lato ttf-proggy-clean
+<br>
+
+#### Extras
+
+    # sudo pacman -S --needed telegram-desktop firefox latte-dock gparted qbittorrent gimp inkscape libreoffice mpv code
 <br>
 
 #### Display Manager
