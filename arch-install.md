@@ -75,9 +75,9 @@
 #### Montar partições
 
     # mount /dev/sdX2 /mnt
-    # mkdir -p /mnt/home && mount /dev/sda2 /mnt/home
+    # mkdir -p /mnt/home && mount /dev/sda3 /mnt/home
     # mkdir -p /mnt/boot/efi && mount /dev/sda1 /mnt/boot/efi
-    # swapon /dev/sdX3
+    # swapon /dev/sdX4
 <br><br>
 
 ## Instalação
