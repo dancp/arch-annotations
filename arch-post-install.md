@@ -27,7 +27,7 @@
 
 #### Pré
 
-    # sudo pacman -S --needed base-devel git openssh unzip unrar wget reflector
+    # sudo pacman -S --needed base-devel git openssh unzip unrar p7zip wget reflector
 <br>
 
 #### Packages
@@ -38,14 +38,14 @@
 
 #### Interface Gráfica
 
-    # sudo pacman -S xorg xorg-xinit
+    # sudo pacman -S --needed xorg xorg-xinit
     # sudo pacman -S --needed xf86-video-amdgpu mesa lib32-mesa mesa-vdpau lib32-mesa-vdpau libva-mesa-driver lib32-libva-mesa-driver libva-vdpau-driver lib32-libva-vdpau-driver vulkan-radeon lib32-vulkan-radeon vkd3d lib32-vkd3d
-    # sudo pacman -S --needed plasma
+    # sudo pacman -S --needed plasma appmenu-gtk-module
 <br>
 
 #### Som
 
-    # sudo pacman -S --needed alsa-plugins alsa-oss pipewire lib32-pipewire pipewire-alsa pipewire-pulse libpulse lib32-libpulse easyeffects
+    # sudo pacman -S --needed alsa-plugins lib32-alsa-plugins alsa-oss lib32-alsa-oss pipewire lib32-pipewire pipewire-alsa pipewire-pulse libpulse lib32-libpulse easyeffects
 <br>
 
 #### Codecs
@@ -57,16 +57,16 @@
 
 #### Fonts
 
-    # sudo pacman -S --needed freetype2 noto-fonts noto-fonts-emoji noto-fonts-cjk awesome-terminal-fonts tex-gyre-fonts gnu-free-fonts dina-font tamsyn-font terminus-font cantarell-fonts inter-font bdf-unifont adobe-source-code-pro-fonts adobe-source-sans-fonts gentium-plus-font ttf-bitstream-vera ttf-croscore ttf-dejavu ttf-droid ttf-ibm-plex ttf-liberation ttf-linux-libertine ttf-roboto ttf-ubuntu-font-family ttf-anonymous-pro ttf-cascadia-code ttf-fantasque-sans-mono otf-fantasque-sans-mono ttf-fira-mono otf-fira-mono otf-fira-sans ttf-fira-code ttf-hack otf-hermit ttf-inconsolata ttc-iosevka ttf-jetbrains-mono ttf-monofur ttf-opensans ttf-junicode ttf-joypixels ttf-caladea ttf-carlito ttf-cormorant ttf-eurof ttf-font-awesome ttf-freefont ttf-indic-otf ttf-lato ttf-proggy-clean
+    # sudo pacman -S --needed fontconfig lib32-fontconfig freetype2 lib32-freetype2 noto-fonts noto-fonts-emoji noto-fonts-cjk awesome-terminal-fonts tex-gyre-fonts gnu-free-fonts dina-font tamsyn-font terminus-font cantarell-fonts inter-font bdf-unifont adobe-source-code-pro-fonts adobe-source-sans-fonts gentium-plus-font ttf-bitstream-vera ttf-croscore ttf-dejavu ttf-droid ttf-ibm-plex ttf-liberation ttf-linux-libertine ttf-roboto ttf-ubuntu-font-family ttf-anonymous-pro ttf-cascadia-code ttf-fantasque-sans-mono otf-fantasque-sans-mono ttf-fira-mono otf-fira-mono otf-fira-sans ttf-fira-code ttf-hack otf-hermit ttf-inconsolata ttc-iosevka ttf-jetbrains-mono ttf-monofur ttf-opensans ttf-junicode ttf-joypixels ttf-caladea ttf-carlito ttf-cormorant ttf-eurof ttf-font-awesome ttf-freefont ttf-indic-otf ttf-lato ttf-proggy-clean
 <br>
 
 #### Extras
 
-    # sudo pacman -S --needed telegram-desktop firefox chromium latte-dock gparted qbittorrent gimp inkscape kdenlive krita libreoffice mpv code atom audacity zsh ufw ufw-extras appmenu-gtk-module htop flatpak
+    # sudo pacman -S --needed telegram-desktop firefox chromium latte-dock gparted qbittorrent gimp inkscape kdenlive krita libreoffice mpv code atom audacity zsh htop flatpak 
 <br>
 
 #### Display Manager
-    # sudo pacman -S --neededsddm sddm-kcm 
+    # sudo pacman -S --needed sddm sddm-kcm
     # sudo systemctl enable sddm.service
 <br>
 
@@ -77,13 +77,13 @@
 <br>
 
 #### Openssh
-
+    # sudo pacman -S --needed openssh
     # sudo systemctl enable sshd.service
 <br>
 
 #### Firewall
  
-    # sudo pacman -S ufw
+    # sudo pacman -S --needed ufw ufw-extras
     # sudo systemctl enable ufw.service
     # sudo ufw enable
 ```
