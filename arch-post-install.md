@@ -39,7 +39,7 @@
 #### Interface Gráfica
 
     # sudo pacman -S --needed xorg xorg-xinit
-    # sudo pacman -S --needed xf86-video-amdgpu mesa lib32-mesa mesa-vdpau lib32-mesa-vdpau libva-mesa-driver lib32-libva-mesa-driver libva-vdpau-driver lib32-libva-vdpau-driver vulkan-radeon lib32-vulkan-radeon vkd3d lib32-vkd3d
+    # sudo pacman -S --needed xf86-video-amdgpu mesa lib32-mesa mesa-vdpau lib32-mesa-vdpau libva lib32-libva libva-mesa-driver lib32-libva-mesa-driver opencl-mesa lib32-opencl-mesa libva-vdpau-driver lib32-libva-vdpau-driver vulkan-radeon lib32-vulkan-radeon vkd3d lib32-vkd3d
     # sudo pacman -S --needed plasma appmenu-gtk-module
 <br>
 
@@ -50,9 +50,9 @@
 
 #### Codecs
 
-    # sudo pacman -S --needed ffmpeg gst-libav gst-plugins-good gst-plugins-ugly gst-plugins-bad flac wavpack celt lame a52dec libdca libmad libmpcdec opencore-amr opus speex libvorbis faac faad2 libfdk-aac
+    # sudo pacman -S --needed ffmpeg gst-libav gstreamer lib32-gstreamer lib32-gst-plugins-base lib32-gst-plugins-base-libs gst-plugins-good gst-plugins-ugly gst-plugins-bad flac lib32-flac wavpack celt lib32-celt lame a52dec libdca libmad libmpcdec opencore-amr opus speex libvorbis faac faad2 libfdk-aac
     # sudo pacman -S --needed jasper libwebp libavif libheif
-    # sudo pacman -S --needed aom dav1d rav1e svt-av1 libde265 libdv libmpeg2 schroedinger libtheora x264 x265 xvidcore
+    # sudo pacman -S --needed aom dav1d rav1e svt-av1 libde265 libdv libmpeg2 schroedinger libtheora lib32-libtheora x264 x265 xvidcore
 <br>
 
 #### Fonts
@@ -62,7 +62,8 @@
 
 #### Extras
 
-    # sudo pacman -S --needed telegram-desktop firefox chromium latte-dock gparted qbittorrent gimp inkscape kdenlive krita libreoffice mpv code atom audacity zsh htop flatpak 
+    # sudo pacman -S --needed telegram-desktop firefox chromium latte-dock gparted qbittorrent gimp inkscape kdenlive krita libreoffice mpv code atom audacity flatpak
+    # sudo pacman -S --needed htop zsh libusb lib32-libusb
 <br>
 
 #### Display Manager
