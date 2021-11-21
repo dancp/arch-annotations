@@ -25,15 +25,15 @@
     # sudo pacman -Sy
 <br>
 
+#### Pré
+
+    # sudo pacman -S --needed git openssh zsh unzip unrar wget base-devel ufw
+<br>
+
 #### Packages
 
     # git clone https://github.com/dancp/arch-annotations.git
     # sudo pacman -S --needed - < pkglist.txt
-<br>
-
-#### Pré
-
-    # sudo pacman -S --needed git openssh zsh unzip unrar wget base-devel ufw
 <br>
 
 #### Interface Gráfica
