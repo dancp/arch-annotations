@@ -40,7 +40,7 @@
 
     # sudo pacman -S --needed xorg xorg-xinit
     # sudo pacman -S --needed xf86-video-amdgpu mesa lib32-mesa mesa-vdpau lib32-mesa-vdpau libva lib32-libva libva-mesa-driver lib32-libva-mesa-driver opencl-mesa lib32-opencl-mesa libva-vdpau-driver lib32-libva-vdpau-driver vulkan-radeon lib32-vulkan-radeon vkd3d lib32-vkd3d
-    # sudo pacman -S --needed plasma appmenu-gtk-module
+    # sudo pacman -S --needed plasma qt5 appmenu-gtk-module
 <br>
 
 #### Som
@@ -63,7 +63,7 @@
 #### Extras
 
     # sudo pacman -S --needed telegram-desktop firefox chromium latte-dock gparted qbittorrent gimp inkscape kdenlive krita libreoffice mpv code atom audacity flatpak obs-studio simplescreenrecorder lib32-simplescreenrecorder
-    # sudo pacman -S --needed htop zsh libusb lib32-libusb
+    # sudo pacman -S --needed htop zsh libusb lib32-libusb ldns nfs-utils sshfs
 <br>
 
 #### Display Manager
