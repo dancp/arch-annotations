@@ -62,7 +62,7 @@
 
 #### Extras
 
-    # sudo pacman -S --needed telegram-desktop firefox chromium latte-dock gparted qbittorrent gimp inkscape kdenlive krita libreoffice mpv code atom audacity flatpak
+    # sudo pacman -S --needed telegram-desktop firefox chromium latte-dock gparted qbittorrent gimp inkscape kdenlive krita libreoffice mpv code atom audacity flatpak obs-studio simplescreenrecorder lib32-simplescreenrecorder
     # sudo pacman -S --needed htop zsh libusb lib32-libusb
 <br>
 
