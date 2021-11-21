@@ -27,7 +27,7 @@
 
 #### Pré
 
-    # sudo pacman -S --needed git openssh zsh unzip unrar wget base-devel ufw
+    # sudo pacman -S --needed base-devel git openssh unzip unrar wget
 <br>
 
 #### Packages
@@ -62,7 +62,7 @@
 
 #### Extras
 
-    # sudo pacman -S --needed telegram-desktop firefox latte-dock gparted qbittorrent gimp inkscape libreoffice mpv code
+    # sudo pacman -S --needed telegram-desktop firefox latte-dock gparted qbittorrent gimp inkscape libreoffice mpv code zsh ufw
 <br>
 
 #### Display Manager
