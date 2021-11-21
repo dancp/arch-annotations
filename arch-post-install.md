@@ -83,19 +83,20 @@
 
 #### Firewall
  
-    # sudo pacman -S gufw
-    # sudo ufw enable
+    # sudo pacman -S ufw
     # sudo systemctl enable ufw.service
-```    
-# ufw default deny
-# ufw allow from 192.168.0.0/24
-# ufw limit SSH
+    # sudo ufw enable
+```
+Basic Config
+# sudo ufw default deny
+# sudo ufw allow from 192.168.0.0/24
+# sudo ufw limit SSH
 ```
 ```
 KDEConnect
-sudo ufw allow 1714:1764/udp
-sudo ufw allow 1714:1764/tcp
-sudo ufw reload
+# sudo ufw allow 1714:1764/udp
+# sudo ufw allow 1714:1764/tcp
+# sudo ufw reload
 ```
 <br>
 
