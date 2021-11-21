@@ -40,7 +40,7 @@
 
     # sudo pacman -S --needed xorg xorg-xinit
     # sudo pacman -S --needed xf86-video-amdgpu mesa lib32-mesa mesa-vdpau lib32-mesa-vdpau libva lib32-libva libva-mesa-driver lib32-libva-mesa-driver opencl-mesa lib32-opencl-mesa libva-vdpau-driver lib32-libva-vdpau-driver vulkan-radeon lib32-vulkan-radeon vkd3d lib32-vkd3d
-    # sudo pacman -S --needed plasma qt5 appmenu-gtk-module
+    # sudo pacman -S --needed plasma qt5 kde-system kde-utilities kde-multimedia kde-graphics kde-accessibility dolphin-plugins kdeconnect appmenu-gtk-module
 <br>
 
 #### Som
