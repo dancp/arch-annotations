@@ -1,7 +1,7 @@
 ## Índice
 
 1. [Pós Instalação](#pós-instalação)
-    - [Habilitar suporte 32-bits](#habilitar-suporte-32-bits)
+    - [Suporte 32-bits](#suporte-32-bits)
     - [Packages](#packages)
     - [Display Manager](#display-manager)
     - [Network Manager](#network-manager)
@@ -15,7 +15,7 @@
 
 ## Pós Instalação
 
-#### Habilitar suporte 32-bits
+#### Suporte 32-bits
 
     # sudo nano /etc/pacman.conf
     
