@@ -66,13 +66,14 @@
 <br>
 
 #### Display Manager
-
+    # sudo pacman -S --neededsddm sddm-kcm 
     # sudo systemctl enable sddm.service
 <br>
 
 #### Network Manager
-
+    # sudo pacman -S --needed networkmanager openvpn networkmanager-openvpn
     # sudo systemctl enable NetworkManager.service
+    # sudo systemctl disable dhcpcd
 <br>
 
 #### Openssh
@@ -96,10 +97,6 @@ sudo ufw allow 1714:1764/udp
 sudo ufw allow 1714:1764/tcp
 sudo ufw reload
 ```
-<br>
-
-#### Internet
-    # sudo systemctl disable dhcpcd
 <br>
 
 - [Instalação](https://github.com/dancp/arch-anotations/blob/master/arch-install.md)
