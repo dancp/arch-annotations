@@ -10,6 +10,7 @@ audacity
 awesome-terminal-fonts
 base-devel
 bdf-unifont
+btop
 cantarell-fonts
 celt
 chromium
