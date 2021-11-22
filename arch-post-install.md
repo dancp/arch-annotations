@@ -27,7 +27,7 @@
 
 #### Pré
 
-    # sudo pacman -S --needed base-devel git openssh unzip unrar p7zip wget reflector
+    # sudo pacman -S --needed base-devel git unzip unrar p7zip wget reflector
 <br>
 
 #### Packages
