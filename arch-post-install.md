@@ -63,7 +63,7 @@
 #### Extras
 
     # sudo pacman -S --needed telegram-desktop firefox chromium latte-dock gparted qbittorrent gimp inkscape kdenlive krita libreoffice mpv code atom audacity flatpak obs-studio simplescreenrecorder lib32-simplescreenrecorder
-    # sudo pacman -S --needed htop zsh libusb lib32-libusb ldns nfs-utils sshfs
+    # sudo pacman -S --needed htop btop zsh libusb lib32-libusb ldns nfs-utils sshfs
 <br>
 
 #### Display Manager
